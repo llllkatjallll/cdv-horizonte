@@ -26,6 +26,10 @@
     <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
 
+    <script src="spiele/stempel/p5.min.js"></script>
+    <script src="spiele/stempel/p5.dom.min.js"></script>
+    <script src="spiele/stempel/p5.sound.min.js"></script>
+
 </head>
 
 <body>
@@ -347,8 +351,17 @@
                 </nav>
                 <article class="overlay--anleitung">
                     <h3>Tauche den Stempel ins Stempelkissen und mache mehrere Abdrücke. Wiederhole es. <br><br><br>&nbsp;</h3>
+
+
                 </article>
+                <figure>
+                    <div id="stempelspiel" class="spiel">
+                        <script src="spiele/stempel/stempel.js"></script>
+                    </div>
+                </figure>
                 <footer>
+
+
                     <button id="btn--starten--spiel--2">Spiel starten</button>
                     <button id="btn--fertig--spiel--2">Beenden</button>
                 </footer>
