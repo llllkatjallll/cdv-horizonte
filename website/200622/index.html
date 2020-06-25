@@ -9,33 +9,42 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="funktionen.js"></script> 
-    
+    <script type="text/javascript" src="funktionen.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="description" content="Horizonte – Kunstvermittlungsapp">
     <meta name="keywords" content="Coding da Vinci, Jo Enzweiler, Institut für Aktuelle Kunst Saarbrücken, Konkrete Kunst">
     <meta name="author" content="Katja Rempel, Nina Jäger, Sandra Kraemer, Catharina Grözinger">
-    
-    </head>
 
-<body>  
-    
-<!-- Platzhalter-Screen für Desktop-Devices -->    
-    
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Platzhalter-Screen für Desktop-Devices -->
+
     <section id="screen--desktop">
     </section>
-    
-<!-- Launch Screen -->          
-    
+
+    <!-- Launch Screen -->
+
     <section id="screen--launch" class="screen--start--end">
         <article>
             <h1>Horizonte</h1>
-        </article>    
+        </article>
     </section>
-    
-<!-- Einleitungsscreen mit Informationen für den User, was ihn*sie erwartet -->      
-    
+
+    <!-- Einleitungsscreen mit Informationen für den User, was ihn*sie erwartet -->
+
     <section id="screen--intro">
         <article>
             <h1>Intro</h1>
@@ -45,35 +54,35 @@
                 <li>Im Anschluss an die Spiele hast du die Gelegenheit mehr über das Werk des Künstlers Jo Enzweiler zu erfahren zu erfahren.</li>
                 <li>Im besten Fall hast du ein Paar Kopfhörer parat, um das volle Programm der App zu nutzen. </li>
             </ol>
-        </article>   
+        </article>
         <footer>
             <button id="btn--weiter--intro">Weiter</button>
         </footer>
     </section>
-    
-<!-- Anfangs-Screen und Dropdown für Informationen über den Konstruktivismus und Jo Enzweiler -->        
-    
+
+    <!-- Anfangs-Screen und Dropdown für Informationen über den Konstruktivismus und Jo Enzweiler -->
+
     <section id="screen--kunst">
         <nav>
             <button id="btn--cancel--kunst" class="btn--cancel">X</button>
         </nav>
         <article id="article--konkret">
             <h1>Konkrete Kunst</h1>
-            <p id="text--konkret" class="truncate">Der Begriff Konkrete Kunst wurde 1924 von Theo van Doesburg eingeführt und 1930 in einem Manifest bei der Gründung der Gruppe Art concret programmatisch festgelegt für eine Richtung der Kunst, die im Idealfall auf mathematisch-geometrischen Grundlagen beruht. Sie  ist im eigentlichen Sinne nicht „abstrakt“, da sie nichts in der  materiellen Realität Vorhandenes abstrahiert, sondern im Gegenteil  Geistiges materialisiert, keine symbolische Bedeutung besitzt und mehr  oder weniger rein durch geometrische Konstruktion erzeugt ist. Richard Paul Lohse sprach eher von konstruktiver Kunst. <br><br>
-            Vom Konstruktivismus und Abstrakter Kunst grenzt sich die konkrete Kunst durch ihr wissenschaftliches Denken (speziell die Erforschung geometrischer Gesetzmäßigkeiten), ihre  Konzentration auf das Zusammenspiel von Form und Farbe und ihr Interesse  an der Erforschung der Farbe ab. Manche Experten betonen dabei den  Stellenwert von einfachen geometrischen Grundformen.  Allerdings ist die Verwendung solcher Elemente weder  Alleinstellungsmerkmal noch notwendiger Bestandteil von Werken der  Konkreten Kunst. Der Begriff wird historisch bedingt vor allem für Werke  aus dem deutschsprachigen Kulturraum verwendet, obwohl es natürlich  weltweit künstlerische Positionen gab und gibt, die der Konkreten Kunst  entsprechen, namentlich in Italien, Frankreich, den Niederlanden,  Tschechien und in Nordamerika. Diese werden aber üblicherweise meist  unter anderen „Etiketten“ geführt. Typisch für Künstler der konkreten Richtung ist, dass ihre Werke in der  Regel vor ihrer Materialisierung zunächst im Kopf entstehen. Im  Extremfall werden deren Entstehungsprinzipien so stringent im Kopf  vorformuliert, dass sie sich fast wie mathematische Formeln darstellen ließen. Die häufige Entstehung ganzer Werkserien wird dadurch gefördert. Einen  wichtigen Beitrag zum theoretischen Überbau und zur Rezeption von  Konkreter Kunst und Poesie vor allem in Deutschland leistete der Stuttgarter Philosoph Max Bense.</p>
-            <button id="btn--weiterlesen--konkret">Weiterlesen</button> 
+            <p id="text--konkret" class="truncate">Der Begriff Konkrete Kunst wurde 1924 von Theo van Doesburg eingeführt und 1930 in einem Manifest bei der Gründung der Gruppe Art concret programmatisch festgelegt für eine Richtung der Kunst, die im Idealfall auf mathematisch-geometrischen Grundlagen beruht. Sie ist im eigentlichen Sinne nicht „abstrakt“, da sie nichts in der materiellen Realität Vorhandenes abstrahiert, sondern im Gegenteil Geistiges materialisiert, keine symbolische Bedeutung besitzt und mehr oder weniger rein durch geometrische Konstruktion erzeugt ist. Richard Paul Lohse sprach eher von konstruktiver Kunst. <br><br>
+                Vom Konstruktivismus und Abstrakter Kunst grenzt sich die konkrete Kunst durch ihr wissenschaftliches Denken (speziell die Erforschung geometrischer Gesetzmäßigkeiten), ihre Konzentration auf das Zusammenspiel von Form und Farbe und ihr Interesse an der Erforschung der Farbe ab. Manche Experten betonen dabei den Stellenwert von einfachen geometrischen Grundformen. Allerdings ist die Verwendung solcher Elemente weder Alleinstellungsmerkmal noch notwendiger Bestandteil von Werken der Konkreten Kunst. Der Begriff wird historisch bedingt vor allem für Werke aus dem deutschsprachigen Kulturraum verwendet, obwohl es natürlich weltweit künstlerische Positionen gab und gibt, die der Konkreten Kunst entsprechen, namentlich in Italien, Frankreich, den Niederlanden, Tschechien und in Nordamerika. Diese werden aber üblicherweise meist unter anderen „Etiketten“ geführt. Typisch für Künstler der konkreten Richtung ist, dass ihre Werke in der Regel vor ihrer Materialisierung zunächst im Kopf entstehen. Im Extremfall werden deren Entstehungsprinzipien so stringent im Kopf vorformuliert, dass sie sich fast wie mathematische Formeln darstellen ließen. Die häufige Entstehung ganzer Werkserien wird dadurch gefördert. Einen wichtigen Beitrag zum theoretischen Überbau und zur Rezeption von Konkreter Kunst und Poesie vor allem in Deutschland leistete der Stuttgarter Philosoph Max Bense.</p>
+            <button id="btn--weiterlesen--konkret">Weiterlesen</button>
         </article>
         <article id="article--enzweiler">
             <h1>Jo Enzweiler</h1>
             <p id="text--enzweiler" class="truncate">1934 in Büdingen/Saar geboren, wendet sich Jo Enzweiler erst im Alter von 22 Jahren autodidaktisch der Kunst zu. Sein soziales Engagement und der Wille, in der Gesellschaft gestalterisch wirksam zu sein, ließen ihn zunächst das Studium der Rechtswissenschaft aufnehmen, wodurch er sich einen Einstieg in die Politik versprach. Als er merkt, dass die künstlerische Arbeit für ihn mehr als nur einen Ausgleich zum universitären Alltag bedeutet, bricht er sein Studium der Rechtswissenschaft ab, um sich auf die Suche nach geeigneten Lehrern zu machen: “Ich habe gemerkt, daß ich im Umgang mit der Kunst die größte Ruhe für mich selbst gefunden habe. Und dann habe ich versucht, das ordentlich zu machen, habe mir Lehrer gesucht, habe das Studium begonnen und was alles damit zusammenhängt.”<br><br>
-            Er studiert an der Münchner Akademie bei Professor Ernst Geitlinger, an der Ecole des Beaux Art in Toulon bei Olive Tamari sowie an der Universität in Aix-en-Provence bis er schließlich nach Saarbrücken zurückkehrt, um seinen Abschluss am Hochschulinstitut für Kunst- und Werkerziehung bei Professor Boris Kleint zu absolvieren. Während seines insgesamt fünfjährigen Studiums der Malerei ist die Kunstpädagogik neben Französisch sein zweites Fach. 1959 tritt der Künstler und Kunsterzieher seinen schulischen Dienst an, um kunstpädagogisch wirksam zu werden und seine Schüler auf dem “Weg in die Kunst” zu geleiten. Die Frage, ob Kunst lehrbar sei, beantwortet Jo Enzweiler 1998 mit folgenden Worten: “Man kann höchstens sagen: Was kann ich in der Lehre tun, um einen Weg in die Kunst zu finden, um selbst in der Kunst mich bewegen zu können? (...) Ich glaube, daß es viele, ich spreche immer von Essentials gibt, die lehrbar sind, das fängt bei den Grundlagen an und endet in speziellen Bereichen.”<br><br>
-            Jo Enzweiler ist durch seinen Professor, Boris Kleint, und dessen Lehre entscheidend geprägt worden und vertritt wie dieser die Meinung, dass „(...) der Ansatz, den das Bauhaus formuliert hat mit den Grundkursen, die dann in den Werkkunstschulen weiterentwickelt worden sind (...)”, hervorragend ist, auch wenn er eine gedankliche Weiterentwicklung für notwendig erachtet.</p>
-            <button id="btn--weiterlesen--enzweiler">Weiterlesen</button>                        
-        </article>   
+                Er studiert an der Münchner Akademie bei Professor Ernst Geitlinger, an der Ecole des Beaux Art in Toulon bei Olive Tamari sowie an der Universität in Aix-en-Provence bis er schließlich nach Saarbrücken zurückkehrt, um seinen Abschluss am Hochschulinstitut für Kunst- und Werkerziehung bei Professor Boris Kleint zu absolvieren. Während seines insgesamt fünfjährigen Studiums der Malerei ist die Kunstpädagogik neben Französisch sein zweites Fach. 1959 tritt der Künstler und Kunsterzieher seinen schulischen Dienst an, um kunstpädagogisch wirksam zu werden und seine Schüler auf dem “Weg in die Kunst” zu geleiten. Die Frage, ob Kunst lehrbar sei, beantwortet Jo Enzweiler 1998 mit folgenden Worten: “Man kann höchstens sagen: Was kann ich in der Lehre tun, um einen Weg in die Kunst zu finden, um selbst in der Kunst mich bewegen zu können? (...) Ich glaube, daß es viele, ich spreche immer von Essentials gibt, die lehrbar sind, das fängt bei den Grundlagen an und endet in speziellen Bereichen.”<br><br>
+                Jo Enzweiler ist durch seinen Professor, Boris Kleint, und dessen Lehre entscheidend geprägt worden und vertritt wie dieser die Meinung, dass „(...) der Ansatz, den das Bauhaus formuliert hat mit den Grundkursen, die dann in den Werkkunstschulen weiterentwickelt worden sind (...)”, hervorragend ist, auch wenn er eine gedankliche Weiterentwicklung für notwendig erachtet.</p>
+            <button id="btn--weiterlesen--enzweiler">Weiterlesen</button>
+        </article>
     </section>
-    
-<!-- Dropdown für Informationen über die App -->        
-    
+
+    <!-- Dropdown für Informationen über die App -->
+
     <section id="screen--info" class="slide-out--up">
         <nav>
             <button id="btn--cancel--info" class="btn--cancel">X</button>
@@ -83,32 +92,32 @@
             <q>Ich bin sicher, dass unsere Wahrnehmung geprägt ist durch unsere Evolution: Der Horizont ist die Linie, auf der der Mensch in der Savanne in der Bedrängnis am ehesten die Gefahr erkennen und dann seine Flucht vornehmen konnte. Deshalb ist die Horizontlinie im Gedächtnis so stark eingeprägt und wir können alle etwa auf der Ebene kommunizieren.</q><br>
             <b>Jo Enzweiler</b><br><br><br>
             <p>Die Web-App lädt die Nutzer*innen dazu ein, sich spielerisch mit den Kunstwerken Jo Enzweilers auseinanderzusetzen. Im kreativen Umgang mit elementaren Formen ermöglichen unterschiedliche Spielvarianten Einblicke in zwei- und dreidimensionale Arbeiten des Künstlers. Wir begegnen einem Raumverständnis, das uns, unsere Bewegungen und Handlungen, immer miteinbezieht. Der uns umgebende Raum wird zum plastischen – also formbaren – sich stets neu konstituierenden konstitutionierenden Gebilde. Die Übersetzung der Arbeiten ins digitale Medium macht kompositorische und konstruktive Prinzipien erfahrbar, in dem sie sie auf ihre Möglichkeitsräume hin öffnet. Im Spiel mit Formen, Körpern, Reihen, Rythmen, Farbklängen und Perspektiven eröffnen sich Horizonte, die über das Einzelwerk hinaus weisen und so ganz nebenbei wesentliche Ansätze der Konstruktiv-Konkreten Kunst vermitteln.<br><br>
-            Die App entstand im Rahmen des Kulturhackaton Coding da Vinci 2020 in Zusammenarbeit zwischen dem Insitut für Aktuelle Kunst Saarbrücken, vertreten durch Nina Jäger und Sandra Krämer, und (die Designerinnen?) Katja Rempel und Catharina Grözinger.</p>
-        </article> 
+                Die App entstand im Rahmen des Kulturhackaton Coding da Vinci 2020 in Zusammenarbeit zwischen dem Insitut für Aktuelle Kunst Saarbrücken, vertreten durch Nina Jäger und Sandra Krämer, und (die Designerinnen?) Katja Rempel und Catharina Grözinger.</p>
+        </article>
     </section>
-    
-<!-- Section für Spiele-Auswahl -->    
-    
+
+    <!-- Section für Spiele-Auswahl -->
+
     <section class="wrapper--auswahl">
-        
+
         <nav>
             <button id="btn--kunst">K</button>
-            <button id="btn--info">I</button>   
+            <button id="btn--info">I</button>
         </nav>
-        
-        <section id="wrapper--auswahl--inner" class="slide-none">  
-            
+
+        <section id="wrapper--auswahl--inner" class="slide-none">
+
             <section id="auswahl--1" class="screen--auswahl">
                 <article>
-                    <h1>Spiel 1</h1>        
-                    <h1>RAUM</h1>        
+                    <h1>Spiel 1</h1>
+                    <h1>RAUM</h1>
                 </article>
                 <div id="wrapper--nav--carousel">
                     <span id="last-1" class="last">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>                       
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>    
+                    </span>
                     <span id="dot1" class="dot active--carousel"></span>
                     <span id="dot2" class="dot"></span>
                     <span id="dot3" class="dot"></span>
@@ -116,13 +125,13 @@
                     <span id="dot5" class="dot"></span>
                     <span id="next-1" class="next">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>      
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>                
+                    </span>
                 </div>
                 <footer>
                     <button id="btn--auswahl--1">Spielen</button>
-                </footer>        
+                </footer>
             </section>
             <section id="auswahl--2" class="screen--auswahl">
                 <article>
@@ -132,9 +141,9 @@
                 <div id="wrapper--nav--carousel">
                     <span id="last-2" class="last">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>                       
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>    
+                    </span>
                     <span id="dot1" class="dot"></span>
                     <span id="dot2" class="dot active--carousel"></span>
                     <span id="dot3" class="dot"></span>
@@ -142,10 +151,10 @@
                     <span id="dot5" class="dot"></span>
                     <span id="next-2" class="next">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>      
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>                
-                </div>            
+                    </span>
+                </div>
                 <footer>
                     <button id="btn--auswahl--2">Spielen</button>
                 </footer>
@@ -154,13 +163,13 @@
                 <article>
                     <h1>Spiel 3</h1>
                     <h1>INTERAKTION</h1>
-                </article>   
+                </article>
                 <div id="wrapper--nav--carousel">
                     <span id="last-3" class="last">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>                       
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>    
+                    </span>
                     <span id="dot1" class="dot"></span>
                     <span id="dot2" class="dot"></span>
                     <span id="dot3" class="dot active--carousel"></span>
@@ -168,9 +177,9 @@
                     <span id="dot5" class="dot"></span>
                     <span id="next-3" class="next">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>      
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>                
+                    </span>
                 </div>
                 <footer>
                     <button id="btn--auswahl--3">Spielen</button>
@@ -180,13 +189,13 @@
                 <article>
                     <h1>Spiel 4</h1>
                     <h1>ÖFFENTLICHER RAUM</h1>
-                </article>    
+                </article>
                 <div id="wrapper--nav--carousel">
                     <span id="last-4" class="last">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>                       
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>    
+                    </span>
                     <span id="dot1" class="dot"></span>
                     <span id="dot2" class="dot"></span>
                     <span id="dot3" class="dot"></span>
@@ -194,9 +203,9 @@
                     <span id="dot5" class="dot"></span>
                     <span id="next-4" class="next">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>      
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>                
+                    </span>
                 </div>
                 <footer>
                     <button id="btn--auswahl--4">Spielen</button>
@@ -206,13 +215,13 @@
                 <article>
                     <h1>Spiel 5</h1>
                     <h1>KOMPOSITION</h1>
-                </article>    
+                </article>
                 <div id="wrapper--nav--carousel">
                     <span id="last-5" class="last">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>                       
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>    
+                    </span>
                     <span id="dot1" class="dot"></span>
                     <span id="dot2" class="dot"></span>
                     <span id="dot3" class="dot"></span>
@@ -220,19 +229,19 @@
                     <span id="dot5" class="dot active--carousel"></span>
                     <span id="next-5" class="next">
                         <svg height="24" width="24">
-                            <polyline points="0, 0 12, 24 24, 0"></polyline>      
+                            <polyline points="0, 0 12, 24 24, 0"></polyline>
                         </svg>
-                    </span>                
+                    </span>
                 </div>
                 <footer>
                     <button id="btn--auswahl--5">Spielen</button>
                 </footer>
-            </section>    
+            </section>
         </section>
     </section>
-    
-<!-- Section für Spiel 1 -->    
-    
+
+    <!-- Section für Spiel 1 -->
+
     <section id="spiel--1" class="wrapper--spiel remove">
         <section id="wrapper--spiel--inner--1" class="slide-none">
             <section id="screen--einleitung--1" class="screen--spiel screen--einleitung">
@@ -244,7 +253,7 @@
                     <p>Was bedeutet der uns als Menschen umgebende Raum? Raum als Umgebungshülle, als Bezugsgröße zu Bewegung, aber auch als Medium für Fühlen und Denken. Die Auseinandersetzung mit dem Raum in der künstlerischen Handlung beginnt im Denken und findet ihren Weg in der Bewegung der Hände, die ein plastisches Objekt fassen, das seinerseits den Raum, in den hinein es entsteht, neu definiert.</p>
                 </article>
                 <footer>
-                    <button id="btn--weiter--einleitung--1">Zum Spiel</button>                
+                    <button id="btn--weiter--einleitung--1">Zum Spiel</button>
                 </footer>
             </section>
 
@@ -252,14 +261,26 @@
                 <nav>
                     <button class="btn--cancel--spiel--1 btn--cancel">X</button>
                 </nav>
-                <article class="overlay--anleitung">    
+                <article class="overlay--anleitung">
                     <h3>Gehe in die Aula der HfM Saar und scanne die Wand. <br><br>
-                    Du kannst die Kompositionen der Wände ändern, indem du sie antippst.<br>&nbsp;</h3>
+                        Du kannst die Kompositionen der Wände ändern, indem du sie antippst.<br>&nbsp;</h3>
+
+
+                    <!-- All you need to put beautiful, interactive 3D content on your site: -->
+                    <model-viewer src="spiele/tile_forExport_rounded.glb" ios-src="spiele/relief_main_20200624.usdz" ar background-color="#222" alt="wirfuerschule" exposure="1" shadow-intensity="1" camera-controls autoplay quick-look-browsers="safari chrome">
+                        <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; bottom: -30 px; left: 5px; ">
+                            👋 Activate AR
+                        </button>
+                    </model-viewer>
+
+
                 </article>
                 <footer>
-                    <button id="btn--starten--spiel--1">Spiel starten</button>
-                    <button id="btn--fertig--spiel--1">Beenden</button>
-                </footer>  
+                    <button id="btn--starten--spiel--1"><a rel="ar" href="spiele/relief_main_20200624.usdz">Spiel starten</a> </button>
+
+
+                    <button id="btn--fertig--spiel--1">Weiter</button>
+                </footer>
             </section>
 
             <section id="screen--werk--1" class="screen--spiel screen--werk">
@@ -283,28 +304,28 @@
                         <button id="play">
                             <svg height="50" width="40">
                                 <polyline points="0, 10 20, 50 40, 10 0, 10">
-                                </polyline>                     
+                                </polyline>
                             </svg>
                         </button>
                         <button id="pause" class="remove">
                             <svg height="40" width="20">
                                 <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
-                                </polyline>  
+                                </polyline>
                             </svg>
                             <svg height="40" width="20">
                                 <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
-                                </polyline>                 
+                                </polyline>
                             </svg>
                         </button>
 
                     </figure>
                 </article>
             </section>
-        </section>    
+        </section>
     </section>
-    
-<!-- Section für Spiel 2 -->    
-    
+
+    <!-- Section für Spiel 2 -->
+
     <section id="spiel--2" class="wrapper--spiel remove">
         <section id="wrapper--spiel--inner--2" class="slide-none">
             <section id="screen--einleitung--1" class="screen--spiel screen--einleitung">
@@ -316,7 +337,7 @@
                     <p>Drei Elemente sind nach Einsicht der Wahrnehmungspsychologie in einem Vorgang erfassbar, währenddem man bei vier Elementen anfangen muß zu lesen. Ich habe das ganz bewußt eingesetzt und es ist ja auch schon in den Vorläufern zu meinen Collagen, den Aluminiumbildern drin. Einen Raster von minimal vier Elementen verwende ich also, damit der Betrachter sich nicht festsetzen kann auf einem Element, daß er gezwungen wird zu wandern. (Jo Enzweiler)</p>
                 </article>
                 <footer>
-                    <button id="btn--weiter--einleitung--2">Zum Spiel</button>                
+                    <button id="btn--weiter--einleitung--2">Zum Spiel</button>
                 </footer>
             </section>
 
@@ -324,13 +345,13 @@
                 <nav>
                     <button class="btn--cancel--spiel--2 btn--cancel">X</button>
                 </nav>
-                <article class="overlay--anleitung">    
+                <article class="overlay--anleitung">
                     <h3>Tauche den Stempel ins Stempelkissen und mache mehrere Abdrücke. Wiederhole es. <br><br><br>&nbsp;</h3>
                 </article>
                 <footer>
                     <button id="btn--starten--spiel--2">Spiel starten</button>
                     <button id="btn--fertig--spiel--2">Beenden</button>
-                </footer>  
+                </footer>
             </section>
 
             <section id="screen--werk--2" class="screen--spiel screen--werk">
@@ -353,28 +374,28 @@
                         <button id="play">
                             <svg height="50" width="40">
                                 <polyline points="0, 10 20, 50 40, 10 0, 10">
-                                </polyline>                     
+                                </polyline>
                             </svg>
                         </button>
                         <button id="pause" class="remove">
                             <svg height="40" width="20">
                                 <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
-                                </polyline>  
+                                </polyline>
                             </svg>
                             <svg height="40" width="20">
                                 <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
-                                </polyline>                 
+                                </polyline>
                             </svg>
                         </button>
 
                     </figure>
                 </article>
             </section>
-        </section>    
+        </section>
     </section>
-    
-<!-- Hero-Screen für den Fall, dass alle Spiele fertig gespielt wurden -->
-    
+
+    <!-- Hero-Screen für den Fall, dass alle Spiele fertig gespielt wurden -->
+
     <section id="screen--hero" class="screen--start--end hide">
         <nav>
             <button id="btn--cancel--hero" class="btn--cancel hide"></button>
@@ -382,8 +403,19 @@
         <article>
             <h1>Hurray!</h1>
         </article>
-    </section>    
-    
-    
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </body>
+
 </html>
