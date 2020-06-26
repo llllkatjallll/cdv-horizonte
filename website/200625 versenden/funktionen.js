@@ -121,12 +121,12 @@ $(document).ready(function (){
 
     $('.btn--cancel--spiel--1').click(function () {
         $('#wrapper--spiel--inner--1').removeClass('slide-left-1 slide-left-2');
-        $('#spiel--1').addClass('remove');       
+        $('#container--spiel--1').addClass('remove');       
     });
     
     $('.btn--cancel--spiel--2').click(function () {
         $('#wrapper--spiel--inner--2').removeClass('slide-left-1 slide-left-2');
-        $('#spiel--2').addClass('remove');
+        $('#container--spiel--2').addClass('remove');
         $('#screen--spielen--2').addClass('scrim');
         $('#screen--spielen--2 > article').removeClass('remove');
         $('#btn--starten--spiel--2').removeClass('remove');
@@ -135,17 +135,17 @@ $(document).ready(function (){
     
     $('.btn--cancel--spiel--3').click(function () {
         $('#wrapper--spiel--inner--3').removeClass('slide-left-1 slide-left-2');
-        $('#spiel--3').addClass('remove');
+        $('#container--spiel--3').addClass('remove');
     });
     
     $('.btn--cancel--spiel--4').click(function () {
         $('#wrapper--spiel--inner--4').removeClass('slide-left-1 slide-left-2');
-        $('#spiel--4').addClass('remove');
+        $('#container--spiel--4').addClass('remove');
     });
     
     $('.btn--cancel--spiel--5').click(function () {
         $('#wrapper--spiel--inner--5').removeClass('slide-left-1 slide-left-2');
-        $('#spiel--5').addClass('remove');
+        $('#container--spiel--5').addClass('remove');
         $('#screen--spielen--5').addClass('scrim');
         $('#screen--spielen--5 > article').removeClass('remove');
         $('#btn--starten--spiel--5').removeClass('remove');
@@ -163,9 +163,14 @@ $(document).ready(function (){
         $('#wrapper--spiel--inner--1').removeClass().addClass('slide-0');
         });
         
+    $('#btn--starten--spiel--1').click(function () {
+        $('#spiel--1').removeClass('remove');
+        });     
+
     $('#btn--fertig--spiel--1').click(function () {
         $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-2');
-        });
+        $('#container--spiel--1').addClass('remove');
+        });     
     
     $('#btn--back--2--spiel--1').click(function () {
         $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-1');
@@ -189,6 +194,7 @@ $(document).ready(function (){
     
     $('#btn--starten--spiel--2').click(function () {
         $('#screen--spielen--2').removeClass('scrim');
+        $('#container--spiel--2').removeClass('remove');
         $('#screen--spielen--2 > article').addClass('remove');
         $(this).addClass('remove');
         $('#btn--speichern--spiel--2').removeClass('remove');
@@ -196,7 +202,7 @@ $(document).ready(function (){
     
     $('#btn--fertig--spiel--2').click(function () {
         $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-2');
-        $('#spiel--2').addClass('remove');
+        $('#container--spiel--2').addClass('remove');
         $('#screen--spielen--2').addClass('scrim');
         $('#screen--spielen--2 > article').removeClass('remove');
         $('#btn--starten--spiel--2').removeClass('remove');
@@ -223,8 +229,13 @@ $(document).ready(function (){
         $('#wrapper--spiel--inner--3').removeClass().addClass('slide-0');
         });    
     
+    $('#btn--starten--spiel--3').click(function () {
+        $('#container--spiel--3').removeClass('remove');
+        });     
+
     $('#btn--fertig--spiel--3').click(function () {
         $('#wrapper--spiel--inner--3').removeClass().addClass('slide-left-2');
+        $('#container--spiel--3').addClass('remove');
         });
     
     $('#btn--back--2--spiel--3').click(function () {
@@ -246,9 +257,14 @@ $(document).ready(function (){
     $('#btn--back--1--spiel--4').click(function () {
         $('#wrapper--spiel--inner--4').removeClass().addClass('slide-0');
         });    
+
+    $('#btn--starten--spiel--4').click(function () {
+        $('#container--spiel--4').removeClass('remove');
+        });     
     
     $('#btn--fertig--spiel--4').click(function () {
         $('#wrapper--spiel--inner--4').removeClass().addClass('slide-left-2');
+        $('#container--spiel--4').addClass('remove');
         });
     
     $('#btn--back--2--spiel--4').click(function () {
@@ -272,6 +288,7 @@ $(document).ready(function (){
     
     $('#btn--starten--spiel--5').click(function () {
         $('#screen--spielen--5').removeClass('scrim');
+        $('#container--spiel--5').removeClass('remove');
         $('#screen--spielen--5 > article').addClass('remove');
         $(this).addClass('remove');
         $('#btn--speichern--spiel--5').removeClass('remove');
@@ -279,6 +296,7 @@ $(document).ready(function (){
     
     $('#btn--fertig--spiel--5').click(function () {
         $('#wrapper--spiel--inner--5').removeClass().addClass('slide-left-2');
+        $('#container--spiel--5').addClass('remove');
         $('#screen--spielen--5').addClass('scrim');
         $('#screen--spielen--5 > article').removeClass('remove');
         $('#btn--starten--spiel--5').removeClass('remove');
@@ -383,5 +401,5 @@ $(document).ready(function (){
         $("#play--5").removeClass("remove");
     });
     
-})
+});
                   
