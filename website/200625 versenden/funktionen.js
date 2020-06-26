@@ -71,7 +71,7 @@ $(document).ready(function (){
     });    
     
     $('#next-5').click(function () {
-        $('#wrapper--auswahl--inner').toggleClass('slide-left-5');
+        $('#wrapper--auswahl--inner').removeClass().addClass('slide-left-5');
     });    
     
      $('#last-1').click(function () {
@@ -148,47 +148,47 @@ $(document).ready(function (){
 /* Navigation innerhalb der Spiele */        
         
     $('#btn--weiter--einleitung--1').click(function () {
-        $('#wrapper--spiel--inner--1').toggleClass('slide-left-1');
+        $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-1');
         });    
     
     $('#btn--fertig--spiel--1').click(function () {
-        $('#wrapper--spiel--inner--1').toggleClass('slide-left-2');
+        $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-2');
         });
     
     
     $('#btn--weiter--einleitung--2').click(function () {
-        $('#wrapper--spiel--inner--2').toggleClass('slide-left-1');
+        $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-1');
         });    
     
     $('#btn--fertig--spiel--2').click(function () {
-        $('#wrapper--spiel--inner--2').toggleClass('slide-left-2');
+        $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-2');
         });
     
     
     $('#btn--weiter--einleitung--3').click(function () {
-        $('#wrapper--spiel--inner--3').toggleClass('slide-left-1');
+        $('#wrapper--spiel--inner--3').removeClass().addClass('slide-left-1');
         });    
     
     $('#btn--fertig--spiel--3').click(function () {
-        $('#wrapper--spiel--inner--3').toggleClass('slide-left-2');
+        $('#wrapper--spiel--inner--3').removeClass().addClass('slide-left-2');
         });
     
     
     $('#btn--weiter--einleitung--4').click(function () {
-        $('#wrapper--spiel--inner--4').toggleClass('slide-left-1');
+        $('#wrapper--spiel--inner--4').removeClass().addClass('slide-left-1');
         });    
     
     $('#btn--fertig--spiel--4').click(function () {
-        $('#wrapper--spiel--inner--4').toggleClass('slide-left-2');
+        $('#wrapper--spiel--inner--4').removeClass().addClass('slide-left-2');
         });
     
     
     $('#btn--weiter--einleitung--5').click(function () {
-        $('#wrapper--spiel--inner--5').toggleClass('slide-left-1');
+        $('#wrapper--spiel--inner--5').removeClass().addClass('slide-left-1');
         });    
     
     $('#btn--fertig--spiel--5').click(function () {
-        $('#wrapper--spiel--inner--5').toggleClass('slide-left-2');
+        $('#wrapper--spiel--inner--5').removeClass().addClass('slide-left-2');
         });    
     
     
