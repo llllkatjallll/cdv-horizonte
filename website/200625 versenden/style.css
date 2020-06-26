@@ -183,7 +183,6 @@ body{
     
     .screen--spielen{
         left: 100vw;
-        background-color: rgba(200,200,200,1);
     }
     
     .screen--werk{
@@ -197,7 +196,11 @@ body{
         flex-direction: column;
         justify-content: center;
         padding: 4rem;
-    }    
+    }   
+    
+    .scrim{
+        background-color: rgba(200,200,200,1) !important;
+    }
     
 /* Navigation */    
     
@@ -209,10 +212,10 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        position: absolute;
+        position: fixed;
     }
     
-    #screen--kunst > nav, #screen--info > nav, .screen--einleitung > nav, .screen--spielen > nav, .screen--werk > nav{
+    #screen--kunst > nav, #screen--info > nav, .screen--einleitung > nav{
         justify-content: flex-end;        
     } 
     
@@ -296,7 +299,11 @@ body{
     .next > svg{
         margin-left: 1rem;
         transform: rotate(-90deg);
-    }        
+    }    
+    
+    .btn--back > svg{
+        left: calc(1.5rem - 12px);
+    }
         
 /* Navigation Audio */    
     
@@ -344,7 +351,8 @@ body{
 
     figure{
         width: 100%;
-        height: 100%;
+        height: auto;
+        margin-bottom: 2.4rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

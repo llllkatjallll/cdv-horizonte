@@ -121,12 +121,16 @@ $(document).ready(function (){
 
     $('.btn--cancel--spiel--1').click(function () {
         $('#wrapper--spiel--inner--1').removeClass('slide-left-1 slide-left-2');
-        $('#spiel--1').addClass('remove');
+        $('#spiel--1').addClass('remove');       
     });
     
     $('.btn--cancel--spiel--2').click(function () {
         $('#wrapper--spiel--inner--2').removeClass('slide-left-1 slide-left-2');
         $('#spiel--2').addClass('remove');
+        $('#screen--spielen--2').addClass('scrim');
+        $('#screen--spielen--2 > article').removeClass('remove');
+        $('#btn--starten--spiel--2').removeClass('remove');
+        $('#btn--speichern--spiel--2').addClass('remove');
     });
     
     $('.btn--cancel--spiel--3').click(function () {
@@ -142,57 +146,155 @@ $(document).ready(function (){
     $('.btn--cancel--spiel--5').click(function () {
         $('#wrapper--spiel--inner--5').removeClass('slide-left-1 slide-left-2');
         $('#spiel--5').addClass('remove');
+        $('#screen--spielen--5').addClass('scrim');
+        $('#screen--spielen--5 > article').removeClass('remove');
+        $('#btn--starten--spiel--5').removeClass('remove');
+        $('#btn--speichern--spiel--5').addClass('remove');
     });        
     
     
-/* Navigation innerhalb der Spiele */        
+/* Navigation innerhalb des Spiels 1 */        
         
     $('#btn--weiter--einleitung--1').click(function () {
         $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-1');
         });    
     
+    $('#btn--back--1--spiel--1').click(function () {
+        $('#wrapper--spiel--inner--1').removeClass().addClass('slide-0');
+        });
+        
     $('#btn--fertig--spiel--1').click(function () {
         $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-2');
         });
     
+    $('#btn--back--2--spiel--1').click(function () {
+        $('#wrapper--spiel--inner--1').removeClass().addClass('slide-left-1');
+        });    
+    
+    $('#btn--weiterlesen--werk--1').click(function () {
+        $(this).addClass('remove');
+        $('#text--werk--1').removeClass('truncate');
+    });
+    
+    
+/* Navigation innerhalb des Spiels 2 */      
     
     $('#btn--weiter--einleitung--2').click(function () {
         $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-1');
         });    
     
-    $('#btn--fertig--spiel--2').click(function () {
-        $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-2');
+    $('#btn--back--1--spiel--2').click(function () {
+        $('#wrapper--spiel--inner--2').removeClass().addClass('slide-0');
         });
     
+    $('#btn--starten--spiel--2').click(function () {
+        $('#screen--spielen--2').removeClass('scrim');
+        $('#screen--spielen--2 > article').addClass('remove');
+        $(this).addClass('remove');
+        $('#btn--speichern--spiel--2').removeClass('remove');
+        });    
+    
+    $('#btn--fertig--spiel--2').click(function () {
+        $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-2');
+        $('#spiel--2').addClass('remove');
+        $('#screen--spielen--2').addClass('scrim');
+        $('#screen--spielen--2 > article').removeClass('remove');
+        $('#btn--starten--spiel--2').removeClass('remove');
+        $('#btn--speichern--spiel--2').addClass('remove');
+        });
+    
+    $('#btn--back--2--spiel--2').click(function () {
+        $('#wrapper--spiel--inner--2').removeClass().addClass('slide-left-1');
+        });    
+    
+    $('#btn--weiterlesen--werk--2').click(function () {
+        $(this).addClass('remove');
+        $('#text--werk--2').removeClass('truncate');
+    });    
+    
+    
+/* Navigation innerhalb des Spiels 3 */      
     
     $('#btn--weiter--einleitung--3').click(function () {
         $('#wrapper--spiel--inner--3').removeClass().addClass('slide-left-1');
+        });    
+    
+    $('#btn--back--1--spiel--3').click(function () {
+        $('#wrapper--spiel--inner--3').removeClass().addClass('slide-0');
         });    
     
     $('#btn--fertig--spiel--3').click(function () {
         $('#wrapper--spiel--inner--3').removeClass().addClass('slide-left-2');
         });
     
+    $('#btn--back--2--spiel--3').click(function () {
+        $('#wrapper--spiel--inner--3').removeClass().addClass('slide-left-1');
+        });  
+    
+    $('#btn--weiterlesen--werk--3').click(function () {
+        $(this).addClass('remove');
+        $('#text--werk--3').removeClass('truncate');
+    });     
+
+    
+/* Navigation innerhalb des Spiels 4 */     
     
     $('#btn--weiter--einleitung--4').click(function () {
         $('#wrapper--spiel--inner--4').removeClass().addClass('slide-left-1');
+        });
+    
+    $('#btn--back--1--spiel--4').click(function () {
+        $('#wrapper--spiel--inner--4').removeClass().addClass('slide-0');
         });    
     
     $('#btn--fertig--spiel--4').click(function () {
         $('#wrapper--spiel--inner--4').removeClass().addClass('slide-left-2');
         });
     
+    $('#btn--back--2--spiel--4').click(function () {
+        $('#wrapper--spiel--inner--4').removeClass().addClass('slide-left-1');
+        });    
+    
+    $('#btn--weiterlesen--werk--4').click(function () {
+        $(this).addClass('remove');
+        $('#text--werk--4').removeClass('truncate');
+    });     
+    
+/* Navigation innerhalb des Spiels 5 */     
     
     $('#btn--weiter--einleitung--5').click(function () {
         $('#wrapper--spiel--inner--5').removeClass().addClass('slide-left-1');
         });    
     
+    $('#btn--back--1--spiel--5').click(function () {
+        $('#wrapper--spiel--inner--5').removeClass().addClass('slide-0');
+        });  
+    
+    $('#btn--starten--spiel--5').click(function () {
+        $('#screen--spielen--5').removeClass('scrim');
+        $('#screen--spielen--5 > article').addClass('remove');
+        $(this).addClass('remove');
+        $('#btn--speichern--spiel--5').removeClass('remove');
+        });      
+    
     $('#btn--fertig--spiel--5').click(function () {
         $('#wrapper--spiel--inner--5').removeClass().addClass('slide-left-2');
+        $('#screen--spielen--5').addClass('scrim');
+        $('#screen--spielen--5 > article').removeClass('remove');
+        $('#btn--starten--spiel--5').removeClass('remove');
+        $('#btn--speichern--spiel--5').addClass('remove');
         });    
     
+    $('#btn--back--2--spiel--5').click(function () {
+        $('#wrapper--spiel--inner--5').removeClass().addClass('slide-left-1');
+        });  
     
-/* Navigation Audio-Player */    
+    $('#btn--weiterlesen--werk--5').click(function () {
+        $(this).addClass('remove');
+        $('#text--werk--5').removeClass('truncate');
+    });     
+    
+/* Navigation Audio-Player 1 */    
 
             var audioElement1 = document.createElement('audio');
     audioElement1.setAttribute('src', 'audio/spiel--1--audio.mp4');
@@ -210,6 +312,8 @@ $(document).ready(function (){
     });
     
     
+/* Navigation Audio-Player 2 */    
+    
             var audioElement2 = document.createElement('audio');
     audioElement2.setAttribute('src', 'audio/spiel--2--audio.mp4');
     
@@ -225,6 +329,8 @@ $(document).ready(function (){
         $("#play--2").removeClass("remove");
     });
     
+    
+/* Navigation Audio-Player 3 */        
     
             var audioElement3 = document.createElement('audio');
     audioElement3.setAttribute('src', 'audio/spiel--3--audio.mp4');
@@ -242,6 +348,8 @@ $(document).ready(function (){
     });
     
     
+/* Navigation Audio-Player 4 */        
+    
             var audioElement4 = document.createElement('audio');
     audioElement4.setAttribute('src', 'audio/spiel--4--audio.mp4');
     
@@ -257,6 +365,8 @@ $(document).ready(function (){
         $("#play--4").removeClass("remove");
     });
     
+    
+/* Navigation Audio-Player 5 */        
     
         var audioElement5 = document.createElement('audio');
     audioElement5.setAttribute('src', 'audio/spiel--5--audio.mp4');
