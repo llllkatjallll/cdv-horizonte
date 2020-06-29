@@ -1,0 +1,1156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: NeueHaas;
+    font-style: normal;
+    font-size: 1em;
+    color: rgba(0,0,0,0.8);
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    --lh: 1.3rem;
+    line-height: var(--lh);    
+}
+
+@font-face{
+    font-family: NeueHaas;
+    src: url("fonts/NeueHaas55.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:NeueHaasItalic;
+    src: url("fonts/NeueHaas56Italic.otf");
+    font-style: italic;
+}
+
+@font-face{
+    font-family:NeueHaasMedium;
+    src: url("fonts/NeueHaas65Medium.otf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: NeueHaasThin;
+    src: url("fonts/NeueHaas35Thin.otf");
+    font-weight: thin;
+}
+
+a{
+    color: rgba(0,0,0,0.8);
+    text-decoration: underline;
+}
+
+body{
+    float: left;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media (pointer: fine){
+    
+    body > section :not(#screen--desktop, h1){
+        display: none;
+    }
+    
+    #screen--desktop{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("img/screen--desktop.png");
+        background-size: cover;        
+        background-position: center;
+        display: block !important;
+    }
+    
+    h1{
+        width: calc(100vw - 2.4rem);
+        height: 100vh;        
+        text-align: center;
+        position: absolute;
+        font-weight: bold;
+        font-size: 2.4rem;
+        letter-spacing: 0.01rem;
+        padding-top: 9.4rem;
+        color: rgba(0,0,0,0.7);
+        background-position: center;
+        background-size: cover;
+    }
+
+} 
+
+@media (pointer:coarse){
+    
+    * {
+        color: rgba(0,0,0,0.7)
+    }    
+    
+/* body */    
+        
+/* Wrapper */ 
+    
+    .wrapper--total{
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .wrapper--auswahl, .wrapper--spiel{
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height 100% !important;
+        float: left;
+        transition: 700ms;
+    }
+    
+    .wrapper--auswahl{
+        z-index: 10;
+        position: fixed;
+    }
+
+    .wrapper--auswahl *, #wrapper--nav--carousel *{    
+        color: #ECE9F3 !important;
+        border-color: #ECE9F3;
+        stroke: #ECE9F3;
+    }     
+    
+    .wrapper--spiel{
+        z-index: 20;
+        position: absolute;
+    }
+    
+    #wrapper--auswahl--inner{
+        width: 500vw;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        z-index: 11;
+        transition: 500ms;
+    }
+    
+    #wrapper--spiel--inner--1, #wrapper--spiel--inner--2, #wrapper--spiel--inner--3, #wrapper--spiel--inner--4, #wrapper--spiel--inner--5{
+        width: 300vw;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        z-index: 21;
+        transition: 500ms;
+    }
+    
+    .wrapper--visual{
+        position: relative;
+        width: calc(100% - 2.4rem);
+        --vish: calc((var(--vh, 1vh) * 100) - 21.6rem);
+        height: var(--vish);
+        padding: 0rem 1.2rem 0rem 1.2rem;
+  /*    background-color: azure; */
+    }
+    
+    .wrapper--visual--inner{
+        width: 100%;
+        height: 100%;
+    }
+    
+/* Formen für Visuals 0 */
+    
+   .visual--0--quadrat{
+        height: calc((100vw - 9.6rem - 0.5rem) / 2);
+        width: calc((100vw - 9.6rem - 0.5rem) / 2);
+        position: absolute;
+        margin: 0.5rem;
+    }
+    
+    #visual--0--quadrat--1{
+        top: 0;
+        left: calc(50vw - (100vw - 9.6rem + 0.5rem) / 2);
+        transform: rotate(180deg);
+    }
+    
+    #visual--0--quadrat--1 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;
+        transform: rotate(180);
+    }
+    
+    #visual--0--quadrat--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--0--quadrat--2 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;
+    }
+
+    #visual--0--quadrat--3{
+        top: calc((100vw - 9.6rem + 0.5rem) / 2);
+        left: calc(50vw - (100vw - 9.6rem + 0.5rem) / 2);
+        transform: rotate(270deg);
+    }
+    
+    #visual--0--quadrat--3 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;;
+    }
+    
+    #visual--0--quadrat--4{
+        top: calc((100vw - 9.6rem + 0.5rem) / 2);
+        left: 50vw;
+    } 
+
+    #visual--0--quadrat--4 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;;
+    }
+    
+/* Formen für Visuals 1 */    
+    
+    .visual--1--form{
+        height: calc(1 / 8 * var(--vish));
+        width: calc((100vw - 2.4rem) / 3);
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: calc(1 / 64 * var(--vish));
+    }
+    
+    #visual--1--form--1{
+        top: 0;
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 5);
+    }
+    
+    #visual--1--form--2{
+        top: calc((1 / 8 * var(--vish)) + (1 / 64 * var(--vish)));
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 6);
+    }
+    
+    #visual--1--form--3{
+        top: calc(2 * ((1 / 8 * var(--vish)) + (1 / 64 * var(--vish))));
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 5);
+    }
+    
+    #visual--1--form--4{
+        top: calc(3 * ((1 / 8 * var(--vish)) + (1 / 64 * var(--vish))));
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 4);
+    }
+    
+    #visual--1--form--5{
+        top: calc(4 * ((1 / 8 * var(--vish)) + (1 / 64 * var(--vish))));
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 3);
+    }
+    
+    #visual--1--form--6{
+        top: calc(5 * ((1 / 8 * var(--vish)) + (1 / 64 * var(--vish))));
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 2);
+    }
+    
+    #visual--1--form--7{
+        top: calc(6 * ((1 / 8 * var(--vish)) + (1 / 64 * var(--vish))));
+        left: calc(((100vw - 2.4rem - ((100vw - 2.4rem) / 3)) / 6) * 1);
+    }    
+
+    
+/* Formen für Visuals 2 */    
+    
+    .visual--2--quadrat{
+        height: calc((100vw - 4.8rem) / 2);
+        width: calc((100vw - 4.8rem) / 2);
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: calc(1 / 64 * var(--vish));
+    }
+    
+    .visual--2--kreis{
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        background-color: #CE6D54;
+        position: absolute;
+        margin: 10%;
+    }
+    
+    #visual--2--quadrat--1{
+        top: 0;
+        left: calc(50vw - (100vw - 4.8rem) / 2);
+    }
+    
+    #visual--2--quadrat--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--2--quadrat--3{
+        top: calc((100vw - 4.8rem) / 2);
+        left: calc(50vw - (100vw - 4.8rem) / 2);
+    }
+    
+    #visual--2--quadrat--4{
+        top: calc((100vw - 4.8rem) / 2);
+        left: 50vw;
+    }
+    
+/* Formen für Visuals 3 */
+    
+    .visual--3--rechteck{
+        width: calc((100vw - 6.2rem) / 2);
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: 0.5rem;
+    }   
+    
+    .visual--3--kreis{
+        height: calc(0.8 * (100vw - 6.2rem) / 2);
+        width: calc(0.8 * (100vw - 6.2rem) / 2);
+        border-radius: 50%;
+        background-color: #E4B255;
+        position: absolute;
+        margin: 10%;
+    }
+    
+    #visual--3--rechteck--1{
+        height: calc((100vw - 6.2rem) - 4.8rem);
+        top: 4.8rem;
+        left: calc(50vw - (100vw - 6.2rem) / 2 - 1rem);
+    }
+
+    #visual--3--rechteck--2{
+        height: calc((100vw - 6.2rem));
+        top: 0rem;
+        left: 50vw;
+    }
+    
+    
+/* Formen für Visuals 4 */   
+    
+    .visual--4--kreis{
+        height: calc((100vw - 4.8rem - 0.5rem) / 2);
+        width: calc((100vw - 4.8rem - 0.5rem) / 2);
+        border-radius: 50%;
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: 0.5rem;
+    }
+    
+    #visual--4--kreis--1{
+        top: 0;
+        left: calc(50vw - (100vw - 4.8rem + 0.5rem) / 2);
+    }
+    
+    #visual--4--kreis--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--4--kreis--3{
+        top: calc((100vw - 4.8rem + 0.5rem) / 2);
+        left: calc(50vw - (100vw - 4.8rem + 0.5rem) / 2);
+    }
+    
+    #visual--4--kreis--4{
+        top: calc((100vw - 4.8rem + 0.5rem) / 2);
+        left: 50vw;
+    }
+    
+/* Formen für Visuals 5 */
+    
+    .visual--5--quadrat{
+        height: calc((100vw - 4.8rem - 0.5rem) / 2);
+        width: calc((100vw - 4.8rem - 0.5rem) / 2);
+        position: absolute;
+        margin: 0.5rem;
+        transform: rotate(180deg);
+    }
+    
+    #visual--5--quadrat--1{
+        top: 0;
+        left: calc(50vw - (100vw - 4.8rem + 0.5rem) / 2);
+    }
+    
+    #visual--5--quadrat--1 > svg > polyline, #visual--5--quadrat--2 > svg > polyline, #visual--5--quadrat--3 > svg > polyline, #visual--5--quadrat--4 > svg > polyline{
+        fill: #ECE9F3;
+    }
+    
+    #visual--5--quadrat--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--5--quadrat--3{
+        top: calc((100vw - 4.8rem + 0.5rem) / 2);
+        left: calc(50vw - (100vw - 4.8rem + 0.5rem) / 2);
+    }
+    
+    #visual--5--quadrat--4{
+        top: calc((100vw - 4.8rem + 0.5rem) / 2);
+        left: 50vw;
+    }
+    
+/* Screens */
+
+    [class^="screen"], [id^="screen"]{
+        width: 100vw;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        float: left;
+        background-color: white;
+        display: flex;    
+        flex-direction: column;
+        overflow: scroll;
+    }
+    
+    .screen--auswahl, .screen--spiel{
+        position: absolute;
+    }
+    
+    .screen--auswahl{
+        background-position: center;
+        background-size: cover;
+        /* background-size: cover;        
+        background-position: center; */
+    }
+        
+    #screen--desktop{
+        display: none !important;
+    }    
+    
+    .screen--start--end{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        background-color: #E4B255;
+        transition: 750ms;
+    } 
+    
+    #screen--intro, #screen--info, #screen--kunst{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        transition: 700ms;        
+    }    
+    
+    #screen--intro{
+        z-index: 33;
+    }
+    
+    #screen--kunst{
+        z-index: 32;
+    }    
+
+    #screen--info{
+        z-index: 31;
+    }    
+    
+    #auswahl--1{
+        left: 0vw;
+        background-color: #AFC1C6;
+    }
+    
+    #auswahl--2{
+        left: 100vw;
+        background-color: #CE6D54;
+    }
+    
+    #auswahl--3{
+        left: 200vw;
+        background-color: #E4B255;
+    }   
+    
+    #auswahl--4{
+        left: 300vw;
+        background-color: #DFB1A5;
+    }    
+ 
+    #auswahl--5{
+        left: 400vw;
+        background-color: #AE8349;
+    }  
+    
+    .screen--einleitung *, .screen--einleitung{
+        left: 0vw;
+        background-color: rgba(100,100,100,1);
+        color: #ECE9F3 !important;
+        border-color: #ECE9F3;
+        stroke: #ECE9F3;
+    }
+    
+    .screen--spielen{
+        left: 100vw;
+    }
+    
+    .screen--werk{
+        left: 200vw;
+    }
+    
+/* Overlay */    
+    
+    .overlay--anleitung{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem;
+    }   
+    
+    .scrim{
+        background-color: rgba(200,200,200,1) !important;
+    }
+    
+/* Navigation */    
+    
+    nav{
+        width: calc(100vw - 2.4rem);
+        max-height: 90vh;
+        padding: 1.2rem;
+        padding-bottom: 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+    }
+    
+    #screen--kunst > nav, #screen--info > nav, .screen--einleitung > nav{
+        justify-content: flex-end;        
+    } 
+    
+    .wrapper--auswahl > nav, .wrapper--auswahl > footer{
+        z-index: 15;
+        position: absolute;
+    }
+        
+    footer{
+        width: 100%;
+        bottom: 2.4rem;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .screen--einleitung > footer{
+        background-color: rgba(0,0,0,0);
+    }
+
+    .screen--werk > nav{
+        z-index: 26;
+    }
+            
+/* Navigation Karusell */    
+    
+    #wrapper--nav--carousel{
+        position: absolute;
+        bottom: 6.6rem;
+        width: 100%;
+        z-index: 15;
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }        
+    
+    .dot{
+        height: 1rem;
+        width: 1rem;
+        background-color: rgba(0,0,0,0);
+        border: solid rgba(0,0,0,0.7) 1px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0.5rem;
+    }   
+
+    .active--carousel{
+        background-color: #ECE9F3 !important;
+    }       
+          
+
+    polyline{
+        stroke: rgba(0,0,0,0.7);
+        stroke-width: 1px;
+        stroke-linecap: round;
+        fill: rgba(0,0,0,0);
+    }
+        
+    nav > button > svg{
+        position: absolute;
+    }
+    
+    #btn--info > svg{
+        left: calc(1.5rem - 11px);
+    }
+    
+    #btn--kunst > svg{
+        left: calc(1.5rem - 8px);
+    }    
+    
+    .btn--cancel > svg{
+        left: calc(1.5rem - 10px)
+    }
+    
+    .last > svg{
+        margin-right: 0.5rem;
+        transform: rotate(90deg);
+    }
+    
+    .next > svg{
+        margin-left: 0.5rem;
+        transform: rotate(-90deg);
+    }    
+    
+    .btn--back > svg{
+        left: calc(1.5rem - 12px);
+    }
+        
+/* Navigation Audio */    
+    
+    [id^="play"]{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 2.5rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-90deg);
+    }
+    
+    [id^="pause"]{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    svg{
+        margin: 0;
+        padding: 0;
+    }
+    
+/* Elemente */    
+
+    article, ol, dialog{
+        max-height: auto;
+        width: auto;
+        padding: 4.8rem 1.2rem 2.4rem 1.2rem;
+    } 
+    
+    #article--konkret, #article--app{
+        padding: 4.8rem 1.2rem 3.6rem 1.2rem !important;
+    }
+    
+    #article--enzweiler, #article--impressum{
+        padding: 0rem 1.2rem 2.4rem 1.2rem !important;
+    }
+    
+    #text--impressum, #text--impressum > p{
+        display: inline-block !important; 
+        text-align: center !important;
+    }
+
+    figure{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    img{
+        max-width: 100%;
+        max-height: 14rem;
+    }
+    
+    figcaption{
+        padding: 1.2rem 1.2rem 2.4rem 1.2rem;
+        font-size: 0.8rem;
+        line-height: 0.96rem;
+        font-weight: normal;
+        letter-spacing: 0.025rem;
+    }            
+        
+/* Buttons */        
+
+    button{
+        height: auto;
+        padding: 0.6rem 1.2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.02rem;
+        background-color: rgba(0,0,0,0);
+        border: rgba(0,0,0,0.7) 1px solid;
+        border-radius: 1.8rem;
+        position: relative;
+    }
+
+    nav > button{
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: white;
+    }
+    
+    .wrapper--auswahl > nav > button{
+        padding-top: 0.4rem;        
+        flex-direction: row;
+    }
+            
+    .wrapper--nav--btns{
+        position: absolute;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .wrapper--auswahl > nav > button{
+        background-color: rgba(0,0,0,0);
+    }
+
+    .screen--einleitung > footer > button, .screen--einleitung > nav > button {
+        border: solid white 1px;
+    }    
+
+    .screen--spiel > nav > button{
+        background-color: rgba(0,0,0,0);
+    }
+    
+    .screen--werk > nav > button{
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    #btn--auswahl--1{
+        z-index: 15;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }    
+        
+/* Font-Styles */    
+    
+    h1{
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        letter-spacing: 0.01rem;
+        margin: 0rem 0rem 2.4rem 0rem;
+        color: rgba(0,0,0,0.7);
+    }
+    
+    h2{
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.02rem;
+        color: rgba(0,0,0,0.7);
+    }
+    
+    ol, ul{
+        padding: 0rem 1.2rem 0rem 2.4rem !important;
+        color: rgba(0,0,0,0.7);
+    }
+    
+    
+    li {
+        text-align: left !important;
+        padding: 0rem 0rem 0.7rem 2rem;
+    }
+    
+    p{
+        padding: 0rem 1rem 2.4rem 1rem;
+        text-align: left !important;
+        color: rgba(0,0,0,0.7);
+        letter-spacing: 0.025rem;
+    }
+    
+    q{
+        font-style: italic;
+        display: inline-block;
+        color: rgba(0,0,0,0.7);
+        text-align: center !important;
+    }    
+    
+    p q{
+        text-align: center !important;
+    }
+    
+    .quote--by{
+        width: 100%;
+        display: inline-block;
+        font-style:normal; 
+        text-align:center;
+    }
+ 
+/* JavaScript */    
+    
+    .remove{
+        display: none !important;
+    }
+    
+    .hide{
+        opacity: 0;
+        z-index: 0 !important;
+    }   
+    
+    .slide-out--up{
+        position: fixed !important;
+        top: -100vh !important;
+    }
+    
+    .slide-in--down{
+        position: fixed !important;
+        top: 0vh !important;
+    }
+    
+    .slide-in-up{
+        top: 0vh !important;
+    }
+    
+    .slide-out-down{
+        top: 100vh !important;
+    }
+    
+    .slide-out-left{
+        position: fixed !important;
+        left: -100vw !important;
+    }
+    
+    slide-in-left{
+        position: fixed !important;
+        left: 0vw !important;
+    }
+    
+    .slide-0{
+        transform: translate(0vw) !important;
+    }
+    
+    .slide-left-1{
+        transform: translate(-100vw) !important;
+    } 
+    
+    .slide-left-2{
+        transform: translate(-200vw) !important;        
+    }
+
+    .slide-left-3{
+        transform: translate(-300vw) !important;
+    }     
+    
+    .slide-left-4{
+        transform: translate(-400vw) !important;
+    } 
+    
+    .slide-left-5{
+        transform: translate(0vw) !important;
+    }    
+    
+    .slide-right-1{
+        transform: translate(-400vw) !important;
+    } 
+    
+    .slide-right-2{
+        transform: translate(0vw) !important;
+    } 
+    
+    .slide-right-3{
+        transform: translate(-100vw) !important;
+    } 
+    
+    .slide-right-4{
+        transform: translate(-200vw) !important;
+    } 
+    
+    .slide-right-5{
+        transform: translate(-300vw) !important;
+    } 
+    
+    .truncate{
+          --max-lines: 5 !important;
+          position: relative !important;
+          max-height: calc(var(--lh) * var(--max-lines) + 0.2rem) !important;
+          overflow: hidden !important;
+          margin-bottom: 2.4rem;
+    }
+        
+}
+
+@media (min-width: 768px){
+    h1{
+        font-size: 2.4rem !important;
+        line-height: 2.9rem !important;
+        margin: 0rem 0rem 4.8rem 0rem;
+    }
+    
+    h2{
+        padding: 0rem 10% 0rem 10%;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    
+    p{
+        --lh: 1.4rem; !important;
+    }
+    
+    article{
+        padding: 9.6rem calc(15% + 1.2rem) 4.8rem calc(15% + 1.2rem) !important;
+    }
+    
+    #article--konkret, #article--app{
+        padding: 9.6rem calc(15% + 1.2rem) 4.8rem calc(15% + 1.2rem) !important;
+    }
+    
+    #article--enzweiler, #article--impressum{
+        padding: 0rem calc(15% + 1.2rem) 4.8rem calc(15% + 1.2rem) !important;
+    }
+
+    nav{
+        width: calc(100vw - 4.8rem);
+        padding: 2.4rem;
+        padding-bottom: 0rem;
+    }
+    
+    #wrapper--nav--carousel{
+        bottom: 9.6rem !important;
+    }
+    
+    footer{
+        bottom: 4.8rem !important 
+    }
+    
+    .screen--start--end{
+        background-color: #E4B255;
+        left: 0vw;
+    }
+    
+    #auswahl--1{
+        left: 0vw;
+    }
+    
+    #auswahl--2{
+        left: 100vw;
+    }
+    
+    #auswahl--3{
+        left: 200vw;
+    }   
+    
+    #auswahl--4{
+        left: 300vw;
+    }    
+ 
+    #auswahl--5{
+        left: 400vw;
+    }  
+    
+    img{
+        max-height: 20rem !important;
+    }
+    
+    .wrapper--visual{
+        position: relative;
+        width: calc(100% - 2.4rem);
+        --vish: calc((var(--vh, 1vh) * 100) - 33.4rem);
+        height: var(--vish);
+        padding: 0rem 1.2rem 0rem 1.2rem;
+  /*    background-color: azure; */
+    }
+    
+    .wrapper--visual--inner{
+        width: 100%;
+        height: 100%;
+    }
+    
+/* Formen für Visuals 0 */
+    
+   .visual--0--quadrat{
+        height: calc((var(--vish) - 2.4rem) / 2);
+        width: calc((var(--vish) - 2.4rem) / 2);
+        position: absolute;
+        margin: 0.5rem;
+    }
+    
+    #visual--0--quadrat--1{
+        top: 0;
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 1rem);
+        transform: rotate(180deg);
+    }
+    
+    #visual--0--quadrat--1 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;
+        transform: rotate(180);
+    }
+    
+    #visual--0--quadrat--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--0--quadrat--2 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;
+    }
+
+    #visual--0--quadrat--3{
+        top: calc((var(--vish) - 2.4rem) / 2 + 1rem);
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 1rem);
+        transform: rotate(270deg);
+    }
+    
+    #visual--0--quadrat--3 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;;
+    }
+    
+    #visual--0--quadrat--4{
+        top: calc((var(--vish) - 2.4rem) / 2 + 1rem);
+        left: 50vw;
+    } 
+
+    #visual--0--quadrat--4 > svg > polyline{
+        fill: #ECE9F3 !important;
+        stroke: none;;
+    }    
+    
+/* Formen für Visuals 2 */    
+    
+    .visual--2--quadrat{
+        height: calc((var(--vish) - 2.4rem) / 2);
+        width: calc((var(--vish) - 2.4rem) / 2);
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: calc(1 / 64 * var(--vish));
+    }
+    
+    .visual--2--kreis{
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        background-color: #CE6D54;
+        position: absolute;
+        margin: 10%;
+    }
+    
+    #visual--2--quadrat--1{
+        top: 0;
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2);
+    }
+    
+    #visual--2--quadrat--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--2--quadrat--3{
+        top: calc((var(--vish) - 2.4rem) / 2);
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2);
+    }
+    
+    #visual--2--quadrat--4{
+        top: calc((var(--vish) - 2.4rem) / 2);
+        left: 50vw;
+    }
+    
+/* Formen für Visuals 3 */
+    
+    .visual--3--rechteck{
+        width: calc((var(--vish) - 2.4rem) / 2);
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: 0.5rem;
+    }   
+    
+    .visual--3--kreis{
+        height: calc(0.8 * (var(--vish) - 2.4rem) / 2);
+        width: calc(0.8 * (var(--vish) - 2.4rem) / 2);
+        border-radius: 50%;
+        background-color: #E4B255;
+        position: absolute;
+        margin: 10%;
+    }
+    
+    #visual--3--rechteck--1{
+        height: calc((var(--vish) - 2.4rem));
+        top: 4.8rem;
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 1rem);
+    }
+
+    #visual--3--rechteck--2{
+        height: calc((var(--vish) - 2.4rem + 4.8rem));
+        top: 0rem;
+        left: 50vw;
+    }
+    
+    
+/* Formen für Visuals 4 */   
+    
+    .visual--4--kreis{
+        height: calc((var(--vish) - 2.4rem) / 2);
+        width: calc((var(--vish) - 2.4rem) / 2);
+        border-radius: 50%;
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: 0.5rem;
+    }
+    
+    #visual--4--kreis--1{
+        top: 0;
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 0.5rem);
+    }
+    
+    #visual--4--kreis--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--4--kreis--3{
+        top: calc((var(--vish) - 2.4rem) / 2 + 0.5rem);
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 0.5rem);
+    }
+    
+    #visual--4--kreis--4{
+        top: calc((var(--vish) - 2.4rem) / 2 + 0.5rem);
+        left: 50vw;
+    }
+    
+/* Formen für Visuals 5 */
+    
+    .visual--5--quadrat{
+        height: calc((var(--vish) - 2.4rem) / 2);
+        width: calc((var(--vish) - 2.4rem) / 2);
+        background-color: #ECE9F3;
+        position: absolute;
+        margin: 0.5rem;
+    }
+    
+    #visual--5--quadrat--1{
+        top: 0;
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 1rem);
+    }
+    
+    #visual--5--quadrat--2{
+        top: 0;
+        left: 50vw;
+    }
+    
+    #visual--5--quadrat--3{
+        top: calc((var(--vish) - 2.4rem) / 2 + 1rem);
+        left: calc(50vw - (var(--vish) - 2.4rem) / 2 - 1rem);
+    }
+    
+    #visual--5--quadrat--4{
+        top: calc((var(--vish) - 2.4rem) / 2 + 1rem);
+        left: 50vw;
+    }
+        .wrapper--auswahl > nav > button{
+        padding-top: 0.4rem;        
+        flex-direction: row;
+    }
+}
