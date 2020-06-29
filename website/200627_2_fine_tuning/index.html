@@ -17,6 +17,24 @@
     <meta name="keywords" content="Coding da Vinci, Jo Enzweiler, Institut für Aktuelle Kunst Saarbrücken, Konkrete Kunst">
     <meta name="author" content="Katja Rempel, Nina Jäger, Sandra Kraemer, Catharina Grözinger">
     
+            <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <script src="spiele/stempel/p5.min.js"></script>
+    <script src="spiele/stempel/p5.dom.min.js"></script>
+    <script src="spiele/stempel/p5.sound.min.js"></script>
+    
+        <!-- helps to switch ios bar off -->
+    <script src="js/helper.js"></script>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     </head>
 
 <body>  
@@ -397,10 +415,15 @@
                 <article class="overlay--anleitung">    
                     <h2><br><br>Tauche den Stempel ins Stempelkissen und mache mehrere Abdrücke. <br><br>Wiederhole es. <br><br><br>&nbsp;</h2>
                 </article>
-                <div id="container--spiel--2" class="remove"></div>
+                <div id="container--spiel--2" class="remove">
+                <div id="stempelspiel" class="spiel">
+                        <script src="spiele/stempel/stempel.js"></script>
+                    </div>
+                </div>
                 <footer>
                     <button id="btn--starten--spiel--2">Starten</button>
-                    <button id="btn--speichern--spiel--2" class="remove">Speichern</button>
+                    <button onclick="resetColors()">Neustart</button>
+                    <button id="btn--speichern--spiel--2" class="remove" onclick="saveArtwork()">Speichern</button>
                     <button id="btn--fertig--spiel--2">Fertig</button>
                 </footer>  
             </section>
@@ -787,6 +810,9 @@
         </article>
     </section>    
     
-</section>    
+</section> 
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>    
 </body>
 </html>
