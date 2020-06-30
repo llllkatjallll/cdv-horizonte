@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Horizonte – Kunstvermittlungs-App</title>
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="funktionen.js"></script> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Horizonte – Kunstvermittlungsapp">
+    <meta name="keywords" content="Coding da Vinci, Jo Enzweiler, Institut für Aktuelle Kunst Saarbrücken, Konkrete Kunst">
+    <meta name="author" content="Katja Rempel, Nina Jäger, Sandra Kraemer, Catharina Grözinger">
+    
+    </head>
+
+<body>  
+    
+<!-- Platzhalter-Screen für Desktop-Devices -->    
+    
+    <section id="screen--desktop">
+        <h1>Öffne die HORIZONTE Web-App<br>auf einem Smartphone oder Tablet.
+        </h1>
+        <div id="wrapper--visual--0" class="wrapper--visual">
+            <div class="wrapper--visual--inner">
+                <div id="visual--0--quadrat--1" class="visual--0--quadrat">
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline fill="#F6FF94" points="0, 0 50, 0 50, 50 0, 45 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 45, 50 0, 50 0, 0" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 0, 45 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>
+                <div id="visual--0--quadrat--2" class="visual--0--quadrat">
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline points="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="0, 0 50, 5 50, 50 40, 50 0, 50 0, 0" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>    
+                <div id="visual--0--quadrat--3" class="visual--0--quadrat">
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline points="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="5, 8 50, 0 50, 50 40, 50 0, 50 5, 8" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>    
+                <div id="visual--0--quadrat--4" class="visual--0--quadrat">    
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline points="0, 0 50, 0 50, 40 10, 50 0, 50 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 10, 50 0, 50 8, 0" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 40 10, 50 0, 50 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<!-- Launch Screen -->          
+    
+    <section id="screen--launch" class="screen--start--end">
+        <article>
+            <h1 style="color:#EDECF0">HORIZONTE</h1>
+        </article>
+        <div id="wrapper--visual--0" class="wrapper--visual">
+            <div class="wrapper--visual--inner">
+                <div id="visual--0--quadrat--1" class="visual--0--quadrat">
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline fill="#F6FF94" points="0, 0 50, 0 50, 50 0, 45 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 45, 50 0, 50 0, 0" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 0, 45 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>
+                <div id="visual--0--quadrat--2" class="visual--0--quadrat">
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline points="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="0, 0 50, 5 50, 50 40, 50 0, 50 0, 0" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>    
+                <div id="visual--0--quadrat--3" class="visual--0--quadrat">
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline points="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="5, 8 50, 0 50, 50 40, 50 0, 50 5, 8" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 40, 50 0, 40 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>    
+                <div id="visual--0--quadrat--4" class="visual--0--quadrat">    
+                    <svg viewbox="0 0 50 50" position="absolute">
+                        <polyline points="0, 0 50, 0 50, 40 10, 50 0, 50 0, 0" fill="freeze">
+                            <animate id="animation--visual--0--quadrat--1" begin="1000ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 50 10, 50 0, 50 8, 0" fill="freeze">
+                            </animate>
+                            <animate id="animation--visual--0--quadrat--1" begin="2500ms" attributeName="points" dur="1000ms" to="0, 0 50, 0 50, 40 10, 50 0, 50 0, 0" fill="freeze">
+                            </animate>
+                        </polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Einleitungsscreen mit Informationen für den User, was ihn*sie erwartet -->      
+    
+<section class="wrapper--total">    
+    
+    <section id="screen--intro">
+        <article>
+            <h1>Willkommen!</h1>
+            <ol>
+                <li>In der Horizonte App kannst Du einiges über den Künstler Jo Enzweiler und über Konkrete Kunst erfahren.</li>
+                <li>In unterschiedlichen Spielen entdeckst Du ....</li>
+                <li>Nach jedem Spiel kannst Du ein Kunstwerk von Jo Enzweiler kennen lernen.</li>
+                <li>Am Besten hast Du ein paar Kopfhörer parat.</li>
+            </ol>
+            <button id="btn--weiter--intro" style="margin-top: 2.4rem">Weiter</button>
+        </article>
+    </section>
+    
+<!-- Anfangs-Screen und Dropdown für Informationen über den Konstruktivismus und Jo Enzweiler -->        
+    
+    <section id="screen--kunst" class="slide-out--up">
+        <nav>
+            <button id="btn--cancel--kunst" class="btn--cancel">
+                <svg height="20" width="20">
+                    <polyline points="0, 20 20, 0"></polyline>
+                    <polyline points="20, 20 0, 0"></polyline>
+                </svg>
+            </button>
+        </nav>
+        <article id="article--konkret">
+            <h1>Konstruktivismus und Konkrete Kunst</h1>
+            <div id="text--konkret" class="truncate"><p>Jo Enzweiler ist ein konkreter Künstler aus dem Saarland. Aber was bedeutet Konkrete Kunst und wo kommt sie her? Die ersten konkreten Kunstwerke sind heute schon ungefähr 100 Jahre alt. Die Künstler*innen, die sie gemalt oder gebaut haben, leben längst nicht mehr, trotzdem sind ihre Werke nicht veraltet oder vergessen. Auch viele junge Künstler*innen arbeiten aktuell an unterschiedlichen Orten der Welt konkret und so entwickelt sich diese Kunstrichtung weiter. 
+            <br><br>
+            Bei Konkreten Bildern sind die Farben, die Grundformen (Kreis, Quadrat, Rechteck, Dreieck und Linie) und die Materialien, aus denen das Bild zusammengesetzt ist, von besonderer Bedeutung. Ein konkreter Künstler, wie Jo Enzweiler, möchte mit seinen Werken nicht die sichtbare Welt zeigen. Er will keinen Menschen, keinen Gegenstand oder die Natur abbilden. Es geht um das Sehen selbst: Wie funktioniert es? Welche Gedanken und Gefühle löst es bei uns aus? Wie reagieren wir, wie reagiert unser Körper auf das, was wir sehen? Woran fühlen wir uns erinnert? Wenn Du Dir die konkreten Bilder von Enzweiler anschaust, wirst Du Formen in bestimmten Anordnungen entdecken und einige wenige Farben. Es kann sein, dass sie Dich an etwas erinnern oder dass Du dabei etwas empfindest, aber Du wirst keine Dinge oder Gegenstände sehen. 
+            <br><br>
+            Konkrete Kunstwerke nennt man auch gegenstandslos, weil sie keinen Gegenstand zeigen. Vor mehr als 100 Jahren malt der russische Künstler Kasimir Malewitsch (1878-1935) das erste gegenstandslose Bild überhaupt: ein schwarzes Quadrat auf weißem Hintergrund. Einige Betrachter*innen damals sind schockiert, weil sie auf dem Bild keinen Gegenstand, kein Motiv erkennen können. Viele andere sind begeistert von seiner Idee der reinen Form. Kasimir Malewitsch war ein konstruktiver Künstler – ein Konstruktivist. Der Begriff kommt von dem Wort “konstruieren” und bedeutet “etwas zusammenfügen” oder “zusammenbauen”. Ein Bild kannst Du zum Beispiel aus Formen, Farben und Materialien zusammensetzen – also konstruieren. Aber auch Ideen oder Gedanken lassen sich zusammenfügen. Die Kunstrichtung, die nach Malewitsch und anderen Künstler*innen benannt ist, die in ähnlicher Art und Weise Bilder zusammenfügen, heißt Konstruktivismus. Die Konkrete Kunst hat also ihren Ursprung im Konstruktivismus. Für viele konstruktive Künstler*innen ist nicht nur das “Machen” von Kunst besonders wichtig, sondern auch die Gedanken und Ideen die damit verbunden sind. Sie wollen mit Kunst etwas bewirken: Kunstwerke sollen nicht nur im Museum gezeigt werden, sondern überall im Alltag stattfinden, damit jeder sie erfahren kann. Die Künstler*innen stellen sich dabei die Frage, welche Wirkungen ihre Werke bei den Menschen erzielen. Aus diesem Grund hat Jo Enzweiler häufig Kunstobjekte an öffentlichen Orten gebaut, damit sie von vielen Personen gesehen und benutzt werden können (z.B. in der Musikhochschule Saarbrücken). Wenn Du an einem Kunstwerk von Enzweiler vorbeigehst, es Dir ansiehst oder anfasst, würde er sich darüber freuen. Auch wenn Du dabei bestimmt etwas ganz anderes denkst oder fühlst, als er während er das Bild gemacht hat.
+            <br><br>
+            Der Begriff des Konstruierens von Bildern und Gedanken ist also sehr wichtig für die Konkrete Kunst. Häufig werden die beiden Begriffe auch miteinander verwendet, weil die Konkrete Kunst sich aus der Konstruktiven Kunst entwickelt hat. Viele Künstler*innen und Kunstwissenschaftler*innen sprechen deshalb von der Konstruktiv-Konkreten Kunst. 
+            <br><br>
+            Aber woher stammt nun der Name Konkret? Zur gleichen Zeit wie Kasimir Malewitsch in Russland haben auch in Europa viele Künstlerinnen und Künstler ähnliche konstruktive Bildideen. In den Niederlanden gründen die Maler Theo van Doesburg (1883-1931) und Piet Mondrian (1872-1944) zusammen mit anderen Künstlern und Architekten eine Künstlervereinigung, die sich De Stijl nennt (Der Stil). Die Mitglieder von De De Stijl konstruieren ihre Kunstwerke (z.B. Bilder, Möbel, Geschirr und Gebäude) in einfachen Formen und Farben. Die Kunstwerke sollen nicht nur schön, sondern auch praktisch und leicht zu benutzen sein. Theo von Doesburg bezeichnet diese Art und Weise, Bilder zu konstruieren, erstmalig als Konkrete Kunst. Er gründet 1929 in Paris die Künstlergruppe “art concret” (das ist französisch und heißt Konkrete Kunst). Ein Jahr später verfasst er einen Text, der die Merkmale Konkreter Kunst genau beschreibt. Ein konkretes Bild muss aus rein bildnerischen Mitteln konstruiert sein, “d.h. aus Flächen und Farben.“ (van Doesburg, 1930) Auch in Deutschland interessieren sich viele Künstler*innen für die Ideen konkreter Bildgestaltung, ähnlich wie van Doesburg oder Piet Mondrian. In den 1920er und 1930er Jahren gibt es in Weimar und später in Dessau eine besonders wichtige Kunstschule: <a href="https://www.bauhaus100.de" target="_blank">das Bauhaus</a>. Wie der Name der Schule schon sagt, lernen die Kunststudent*innen hier das Bauen, d.h. das Konstruieren von Bildern, Möbeln oder Architektur. Am Bauhaus werden in der künstlerischen und handwerklichen Ausbildung konstruktive und konkrete Gestaltungsformen gelehrt. Auch in der <a href="http://institut-aktuelle-kunst.de/publikationen/sichtbar-machen-staatliche-kunstschulen-im-saarland-1924-2004" target="_blank">Saarbrücker Werkkunstschule</a>, wo Jo Enzweiler bis 1961 Kunst und Werkerziehung studiert, lernt er die Grundregeln des Malens und Bauens in verschiedenen Werkstätten kennen: in der Holzwerkstatt, der Metallwerkstatt, beim Buchbinder usw. In der Grundausbildung, der so genannten Grundlehre erfahren die Studierenden viel über geometrische Grundformen, sie machen Farbstudien und experimentieren mit ungewöhnlichen Materialien. Jo Enzweiler und viele andere Künstler*innen diskutieren in dieser Zeit über neue Möglichkeiten Kunst zu machen und entdecken dabei die Konstruktive und Konkrete Kunst für sich. Zeitgleich entwickeln Erfinder*innen und Wissenschaftler*innen neue Technologien wie z.B. das Farb-Fernsehen, das Tastentelefon und den Computer. Auch diese neuen technischen Möglichkeiten haben Einfluss auf die Weiterentwicklung der Konstruktiv-Konkreten Kunst. Viele Künstler*innen denken darüber nach, wie sie diese Möglichkeiten für ihre Kunst nutzen können und entwickeln so ganz neue Kunstformen. Sie experimentieren z.B. mit beweglichen Kunstobjekten, mit Licht und Ton und machen zum ersten Mal Versuche, bei denen Kunstwerken von Computern gestaltet werden. Diese Entwicklung setzt sich bis heute fort und es entstehen immer neue Formen von Kunst. Auch die Computerkunst hat damit ihren Anfang in der Konkreten Kunst. Du siehst also, dass das, was vor mehr als 100 Jahren mit dem Konstruktivismus begonnen hat, von unterschiedlichen Künstler*innen vielerorts bis heute weiterentwickelt worden ist. Einer von ihnen ist Jo Enzweiler, dessen Werke Du jetzt spielerisch entdecken kannst.
+            <br><br>
+            Auf den Internetseiten des Museums für Konkrete Kunst kannst Du mehr erfahren ... <a href="https://www.mkk-ingolstadt.de/museum/konzept/was-ist-konkrete-kunst/" target="_blank">https://www.mkk-ingolstadt.de/museum/konzept/was-ist-konkrete-kunst/</a>
+            </p></div>
+            <button id="btn--weiterlesen--konkret">Weiterlesen</button> 
+        </article>
+        <article id="article--enzweiler">
+            <h1>Jo Enzweiler</h1>
+            <div id="text--enzweiler" class="truncate"><p>
+            <q>(Die Konkreten) wirken ja doch immer noch gerne gesellschaftlich, konstruktivistisches erbgut, konkretes gestalten per definitionem. wird damit nicht auch jo enzweiler exakt definiert? durch das globale netz und das wirken in der region, für die region?</q><br><span class="quote--by">(Eugen Gomringer)</span><br><br>
+            Jo Enzweiler (*1934) ist Bildender Künstler, Kunstvermittler, Impulsgeber und Hochschulprofessor. Sein Schaffen widmet er seit mehr als 60 Jahren der Konkreten Kunst. Ein weiteres großes Anliegen gilt der Integration von Kunst in die Gesellschaft., Als Mitglied der neuen gruppe saar, des Deutschen Werkbundes, als Gründungsrektor der Hochschule der Bildenden Künste Saar, als Mitbegründer der Galerie St. Johann sowie als Direktor des Instituts für aktuelle Kunst im Saarland ist er auf vielfältige Weise an dieser Schnittstelle tätig.</p>
+            <ul>
+                <li>1934 geboren in Merzig-Büdingen</li>
+                <li>1954-56 Studium der Rechtswissenschaft in Saarbrücken und Hamburg</li>
+                <li>1956-61 Studium: Malerei, Kunsterziehung, Französisch an der Akademie der Bildenden Künste München (Professor Ernst Geitlinger), an der École des Beaux-Arts Toulon (Professor Olive Tamari), an der Universität Aix-en-Provence und am Hochschulinstitut für Kunst- und Werkerziehung Saarbrücken (<a href="http://institut-aktuelle-kunst.de/kuenstlerlexikon/kleint-boris" target="_blank">Professor Boris Kleint</a>)</li>
+                <li> 1959-72 Kunsterzieher am Staatlichen Mädchen-Gymnasium in Saarbrücken</li>
+                <li>seit 1960 Mitglied der neuen gruppe saar</li>
+                <li>1969-2017 Künstlerischer Berater der Galerie St. Johann in Saarbrücken und Mitherausgeber der Veröffentlichungen des Verlags St. Johann</li>
+                <li>1972-78 Akademischer Rat an der Pädagogischen Hochschule des Saarlandes (Lehre der Grafischen Gestaltung)</li>
+                <li>1976/77 Gast der <a href="https://www.villamassimo.de">Deutschen Akademie Rom, Villa Massimo</a></li>
+                <li>1979 Professor der Fachhochschule des Saarlandes, Fachbereich Design (Lehrgebiet: Künstlerische Druckgrafik)</li>
+                <li><a href="https://www.hbksaar.de" target="_blank">1988/89 zunächst Gründungsbeauftragter dann Gründungsrektor der Hochschule der Bildenden Künste Saar (hbk saar)</a></li>
+                <li>1989-99 Professor für Malerei an der hbk saar</li>
+                <li>seit 1993 Direktor des Instituts für aktuelle Kunst im Saarland an der <a href="http://institut-aktuelle-kunst.de" target="_blank">Hochschule der Bildenden Künste Saar Saarlouis</a></li>
+                <li>1999 Verleihung des Saarländischen Verdienstordens</li>
+                <li>2008/09 Albert-Weisgerber-Preis der Stadt St. Ingbert</li>
+                <li> 2016/17 Gründung und Eröffnung des Forschungszentrums für Künstlernachlässe am Institut für aktuelle Kunst im Saarland</li>
+                <li><a href="https://www.deutscher-werkbund.de" target="_blank">Mitglied des Deutschen Werkbundes</a></li>
+                <li>Lebt und arbeitet in Saarbrücken und Wallerfangen</li>
+            </ul><br><br>
+            <a href="https://de.wikipedia.org/wiki/Jo_Enzweiler" target="_blank">http://institut-aktuelle-kunst.de/kuenstlerlexikon/enzweiler-jo</a><br><br><a href="https://de.wikipedia.org/wiki/Jo_Enzweiler" target="_blank">https://de.wikipedia.org/wiki/Jo_Enzweiler</a>
+            </div>
+            <button id="btn--weiterlesen--enzweiler">Weiterlesen</button>                        
+        </article>   
+    </section>
+    
+<!-- Dropdown für Informationen über die App -->        
+    
+    <section id="screen--info" class="slide-out--up">
+        <nav>
+            <button id="btn--cancel--info" class="btn--cancel">
+                <svg height="20" width="20">
+                    <polyline points="0, 20 20, 0"></polyline>
+                    <polyline points="20, 20 0, 0"></polyline>
+                </svg>
+            </button>
+        </nav>
+        <article id="article--app">
+            <h1>Über diese App</h1>
+                <div  id="text--app" class="truncate"><p><q>Ich bin sicher, dass unsere Wahrnehmung geprägt ist durch unsere Evolution: Der Horizont ist die Linie, auf der der Mensch in der Savanne in der Bedrängnis am ehesten die Gefahr erkennen und dann seine Flucht vornehmen konnte. Deshalb ist die Horizontlinie im Gedächtnis so stark eingeprägt und wir können alle etwa auf der Ebene kommunizieren.</q><br><br>
+                <span class="quote--by">(Jo Enzweiler)</span><br><br><br>
+                Diese Web-App lädt Dich dazu ein, Dich spielerisch mit den Kunstwerken Jo Enzweilers zu beschäftigen. In unterschiedlichen Spielvarianten kannst Du Einblicke in zwei- und dreidimensionale Arbeiten des Künstlers gewinnen und seine Arbeitsweise kennenlernen. Dabei wirst Du selbst Teil der Werke und kannst sehen, wie sie sich durch jede Deiner Bewegungen und Handlungen verändern. Jo Enzweiler arbeitet mit ganz einfachen Bildelementen, wie Linie, Kreis und Quadrat und auch die Materialien, die er verwendet, zum Beispiel Holz, Metall, Stein und Papier, sind einfach. Im virtuellen Raum dieser App erfährst Du etwas darüber, wie er diese Mittel nutzt, um Plastiken zu bauen und Bilder zu komponieren. Du erfährst etwas darüber, welche Möglichkeiten sich dabei eröffnen und wie der Künstler seine Entscheidungen trifft. Du erfährst etwas über Konstruktion und Intuition und vielleicht sogar auch ein bisschen etwas über Dich, über den Raum der Dich umgibt und die Art wie Du die Dinge siehst. Im Spiel mit Formen, Körpern, Reihen, Rythmen, Farbklängen und Perspektiven eröffnen sich Horizonte und so lernst Du, ganz nebenbei, wesentliche Ansätze der Konstruktiv-Konkreten Kunst kennen.</p></div>
+                <button id="btn--weiterlesen--app">Weiterlesen</button>
+        </article>
+        <article id="article--impressum">
+            <h1>Impressum</h1>
+            <div id="text--impressum" class="truncate-impressum">
+                <p>Die App entstand im Rahmen des Kulturhackaton Coding da Vinci SaarLorLux 2020
+                <br><br>
+                INSTITUTTION
+                <br>
+                Institut für Aktuelle Kunst im Saarland<br>
+                <br>DATENSET<br>
+                Jo Enzweiler — Kunst im öffentlichen Raum (1962-2010)<br>
+                <br>GESTALTUNG UND PROGRAMMIERUNG<br>
+                Catharina Grözinger, Katja Rempel<br>
+                <br>REDAKTION<br>
+                Nina Jäger, Sandra Kraemer<br>
+                <br>2020<br>
+                <br>LIZENZEN<br>
+                <br>FOTOS</p>
+            </div>
+            <button id="btn--weiterlesen--impressum">Weiterlesen</button>
+        </article>
+    </section>
+    
+<!-- Section für Spiele-Auswahl -->    
+    
+    <section class="wrapper--auswahl">
+        
+        <nav>
+            <button id="btn--kunst">
+                <h1 style="font-family:NeueHaasThin; font-weight:thin">K</h1>
+            </button>
+            <button id="btn--info">
+                <h1 style="font-family:NeueHaasThin; font-weight:thin !important">I</h1>
+            </button>   
+        </nav>
+        
+        <section id="wrapper--auswahl--inner" class="">  
+            
+            <section id="auswahl--1" class="screen--auswahl">
+                <article>
+                    <h1 style="margin:0">RAUM</h1>        
+                </article>
+                <div id="wrapper--visual--1" class="wrapper--visual">
+                    <div class="wrapper--visual--inner">
+                        <div id="visual--1--form--1" class="visual--1--form">
+                        </div>
+                        <div id="visual--1--form--2" class="visual--1--form">
+                        </div>
+                        <div id="visual--1--form--3" class="visual--1--form">
+                        </div>
+                        <div id="visual--1--form--4" class="visual--1--form">
+                        </div>
+                        <div id="visual--1--form--5" class="visual--1--form">
+                        </div>
+                        <div id="visual--1--form--6" class="visual--1--form">
+                        </div>
+                    </div>    
+                </div>
+                <div id="wrapper--nav--carousel">
+                    <span id="last-1" class="last">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>
+                        </svg>
+                    </span>    
+                    <span id="dot1" class="dot active--carousel"></span>
+                    <span id="dot2" class="dot"></span>
+                    <span id="dot3" class="dot"></span>
+                    <span id="dot4" class="dot"></span>
+                    <span id="dot5" class="dot"></span>
+                    <span id="next-1" class="next">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>      
+                        </svg>
+                    </span>                
+                </div>
+                <footer>
+                    <button id="btn--auswahl--1">Entdecken</button>
+                </footer>        
+            </section>
+            <section id="auswahl--2" class="screen--auswahl">
+                <article>
+                    <h1 style="margin:0">RHYTHMUS</h1>
+                </article>
+                <div id="wrapper--visual--2" class="wrapper--visual">
+                    <div class="wrapper--visual--inner">
+                        <div id="visual--2--quadrat--1" class="visual--2--quadrat">
+                            <div class="visual--2--kreis">
+                            </div>
+                        </div>
+                        <div id="visual--2--quadrat--2" class="visual--2--quadrat">
+                            <div class="visual--2--kreis">
+                            </div>
+                        </div>
+                        <div id="visual--2--quadrat--3" class="visual--2--quadrat">
+                            <div class="visual--2--kreis">
+                            </div>
+                        </div>
+                        <div id="visual--2--quadrat--4" class="visual--2--quadrat">
+                            <div class="visual--2--kreis">
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div id="wrapper--nav--carousel">
+                    <span id="last-2" class="last">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>
+                        </svg>
+                    </span>    
+                    <span id="dot1" class="dot"></span>
+                    <span id="dot2" class="dot active--carousel"></span>
+                    <span id="dot3" class="dot"></span>
+                    <span id="dot4" class="dot"></span>
+                    <span id="dot5" class="dot"></span>
+                    <span id="next-2" class="next">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>      
+                        </svg>
+                    </span>                
+                </div>            
+                <footer>
+                    <button id="btn--auswahl--2">Entdecken</button>
+                </footer>
+            </section>
+            <section id="auswahl--3" class="screen--auswahl">
+                <article>
+                    <h1 style="margin:0">INTERAKTION</h1>
+                </article>
+                <div id="wrapper--visual--3" class="wrapper--visual">
+                    <div class="wrapper--visual--inner">
+                            <div id="visual--3--rechteck--1" class="visual--3--rechteck">
+                            </div>
+                            <div id="visual--3--rechteck--2" class="visual--3--rechteck">
+                                <div id="visual--3--kreis--1" class="visual--3--kreis"></div>
+                            </div>
+                    </div>
+                </div>
+                <div id="wrapper--nav--carousel">
+                    <span id="last-3" class="last">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>
+                        </svg>
+                    </span>    
+                    <span id="dot1" class="dot"></span>
+                    <span id="dot2" class="dot"></span>
+                    <span id="dot3" class="dot active--carousel"></span>
+                    <span id="dot4" class="dot"></span>
+                    <span id="dot5" class="dot"></span>
+                    <span id="next-3" class="next">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>      
+                        </svg>
+                    </span>                
+                </div>
+                <footer>
+                    <button id="btn--auswahl--3">Entdecken</button>
+                </footer>
+            </section>
+            <section id="auswahl--4" class="screen--auswahl">
+                <article>
+                    <h1 style="margin:0">ÖFFENTLICHER RAUM</h1>
+                </article>  
+                <div id="wrapper--visual--4" class="wrapper--visual">
+                    <div class="wrapper--visual--inner">
+                            <div id="visual--4--kreis--1" class="visual--4--kreis">
+                            </div>
+                            <div id="visual--4--kreis--2" class="visual--4--kreis">
+                                <div id="visual--4--durchbruch--2" class="visual--4--durchbruch"></div>
+                            </div>
+                            <div id="visual--4--kreis--3" class="visual--4--kreis">
+                                <div id="visual--4--durchbruch--3" class="visual--4--durchbruch"></div>
+                            </div>
+                            <div id="visual--4--kreis--4" class="visual--4--kreis">
+                            </div>
+                    </div>    
+                </div>
+                <div id="wrapper--nav--carousel">
+                    <span id="last-4" class="last">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>
+                        </svg>
+                    </span>    
+                    <span id="dot1" class="dot"></span>
+                    <span id="dot2" class="dot"></span>
+                    <span id="dot3" class="dot"></span>
+                    <span id="dot4" class="dot active--carousel"></span>
+                    <span id="dot5" class="dot"></span>
+                    <span id="next-4" class="next">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>      
+                        </svg>
+                    </span>                
+                </div>
+                <footer>
+                    <button id="btn--auswahl--4">Entdecken</button>
+                </footer>
+            </section>
+            <section id="auswahl--5" class="screen--auswahl">
+                <article>
+                    <h1 style="margin:0">KOMPOSITION</h1>
+                </article> 
+                <div id="wrapper--visual--5" class="wrapper--visual">
+                    <div class="wrapper--visual--inner">
+                        <div id="visual--5--quadrat--1" class="visual--5--quadrat">
+                            <svg viewbox="0 0 143 143" position="absolute">
+                                <polyline fill="#F6FF94" points="0, 0 0, 58 10, 69 26, 70 30, 79 52, 84 67, 78 82, 83 94, 91 110, 90 112, 99 135, 103 143, 99 143, 0 0, 0">
+                                </polyline>
+                            </svg>
+                        </div>
+                            <div id="visual--5--quadrat--2" class="visual--5--quadrat">
+                                <svg viewbox="0 0 143 143" position="absolute">
+                                <polyline fill="#F6FF94" points="0, 0 0, 58 10, 69 26, 70 30, 79 52, 84 67, 78 82, 83 94, 91 110, 90 112, 99 135, 103 143, 99 143, 0 0, 0">
+                                </polyline>
+                                </svg>
+                            </div>
+                            <div id="visual--5--quadrat--3" class="visual--5--quadrat">
+                                <svg viewbox="0 0 143 143" position="absolute">
+                                <polyline fill="#F6FF94" points="0, 0 0, 58 10, 69 26, 70 30, 79 52, 84 67, 78 82, 83 94, 91 110, 90 112, 99 135, 103 143, 99 143, 0 0, 0">
+                                </polyline>
+                                </svg>
+                            </div>
+                            <div id="visual--5--quadrat--4" class="visual--5--quadrat">
+                                <svg viewbox="0 0 143 143" position="absolute">
+                                <polyline fill="#F6FF94" points="0, 0 0, 58 10, 69 26, 70 30, 79 52, 84 67, 78 82, 83 94, 91 110, 90 112, 99 135, 103 143, 99 143, 0 0, 0">
+                                </polyline>
+                                </svg>
+                            </div>
+                    </div>    
+                </div>
+                <div id="wrapper--nav--carousel">
+                    <span id="last-5" class="last">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>
+                        </svg>
+                    </span>    
+                    <span id="dot1" class="dot"></span>
+                    <span id="dot2" class="dot"></span>
+                    <span id="dot3" class="dot"></span>
+                    <span id="dot4" class="dot"></span>
+                    <span id="dot5" class="dot active--carousel"></span>
+                    <span id="next-5" class="next">
+                        <svg height="15" width="20">
+                            <polyline points="0, 0 10, 15 20, 0"></polyline>      
+                        </svg>
+                    </span>                
+                </div>
+                <footer>
+                    <button id="btn--auswahl--5">Entdecken</button>
+                </footer>
+            </section>    
+        </section>
+    </section>
+    
+<!-- Section für Spiel 1 -->    
+    
+    <section id="spiel--1" class="wrapper--spiel slide-out-down">
+        <section id="wrapper--spiel--inner--1" class="slide-0">
+            <section id="screen--einleitung--1" class="screen--spiel screen--einleitung">
+                <nav>
+                    <button class="btn--cancel--spiel--1 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Hast Du schon einmal darüber nachgedacht, was Dich umgibt?</h1>
+                    <q>Was bedeutet der uns als Menschen umgebende Raum? Raum als Umgebungshülle, als Bezugsgröße zu Bewegung, aber auch als Medium für Fühlen und Denken. Die Auseinandersetzung mit dem Raum in der künstlerischen Handlung beginnt im Denken und findet ihren Weg in der Bewegung der Hände, die ein plastisches Objekt fassen, das seinerseits den Raum, in den hinein es entsteht, neu definiert.</q><br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span>
+                </article>
+                <footer>
+                    <button id="btn--weiter--einleitung--1">Zum Spiel</button>                
+                </footer>
+            </section>
+
+            <section id="screen--spielen--1" class="screen--spiel screen--spielen">
+                <nav>
+                    <button id="btn--back--1--spiel--1" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--1 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article class="overlay--anleitung">
+                    <h2><br><br>Gehe in die Aula der HfM Saar und scanne die Wand. <br><br>
+                    Du kannst die Kompositionen der Wände ändern, indem du sie antippst.<br>&nbsp;</h2>
+                </article>
+                <div id="container--spiel--1" class="remove"></div>
+                <footer>
+                    <button id="btn--starten--spiel--1">Starten</button>
+                    <button id="btn--fertig--spiel--1">Fertig</button>
+                </footer>
+            </section>
+
+            <section id="screen--werk--1" class="screen--spiel screen--werk">
+                <nav>
+                    <button id="btn--back--2--spiel--1" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--1 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>o. T.</h1>
+                    <figure>
+                        <img src="img/spiel--1--werk.jpg">
+                        <figcaption>
+                            1970, Relief, geweiße Hütensteine, 3,50 x 20,00 m, Hochschule für Musik Saar, Saarbrücken, Großer Musiksaal
+                        </figcaption>
+
+
+                        <audio>
+                            <source src="audio/spiel--1--audio.mp4">
+                        </audio>
+                        <button id="play--1">
+                            <svg height="50" width="40">
+                                <polyline points="0, 10 20, 50 40, 10 0, 10">
+                                </polyline>
+                            </svg>
+                        </button>
+                        <button id="pause--1" class="remove">
+                            <svg height="40" width="20">
+                                <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
+                                </polyline>  
+                            </svg>
+                            <svg height="40" width="20">
+                                <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
+                                </polyline>                 
+                            </svg>
+                        </button>
+                    </figure>
+                    <p id="text--werk--1" class="truncate">
+                        1970 realisiert Jo Enzweiler ein Backsteinrelief am Neubau der Musikhochschule Saarbrücken, der 1970-73 nach den Entwürfen des Architekten Heinrich Latz errichtet wird.<br><br>
+                        Wenn Du das Gebäude betrittst, stößt Du rechterhand unmittelbar auf das Relief. Es ist an der Außenwand des großen Musiksaales angebracht und markiert das Herzstück der Hochschule. Wenn Du dem Umgang um das großzügige, begrüntes Atrium folgst, begleitet das Relief aus geweißten Hüttensteinen Deine Bewegungen. Die Wandgestaltung aus gemauerten Steinen überzieht die gesamte Fläche mit einem gleichförmigen Raster.<br><br>
+                        Aus der Fläche erheben sich, durch das Vor- und Zurückstehen der Steine über die gesamte Wandhöhe schräge Formen, mal zugespitzt wie Pfeile, mal in sich gezackt. Sie scheinen sich aufeinander zu zu bewegen, auf einen Punkt zu, und dann wieder voneinander weg, wie tanzende Stelen. Besonders plastisch wirken sie dadurch, dass die einzelnen Steine, aus denen sie zusammengesetzt sind, eine Struktur erzeugen, die ganz stark mit Schattenwirkungen spielt. Je nach Lichteinfall und Perspektive kommt das Relief hervor oder es tritt zurück. Du kannst diesen Formen, ihren rythmischen Bewegungen und harmonischen Variationen im Vorbeigehen folgen wie einer Komposition. Vielleicht denkst Du dabei sogar an das Lesen einer Noten-Partitur. <br>
+                        <br><br>
+                        <q>Der Backstein wurde für mich zum ‘Ton’, den ich visuell zum Klingen bringen musste. Das regelmäßig definierte, stereometrische Element des Steins wurde durch serielle und kompositorische Anwendung Grundelement der Gesamtgestaltung. Auch hier sind für die Gesamtlösung zwei wichtige Entscheidungen getroffen worden: einmal die Bezugnahme auf die räumliche Situation und zum anderen die rhythmisierende Gliederung. Darüber hinaus war wichtig, dass durch Bewegung des Betrachters die Wand sich insgesamt erschließt. Vor die Grundfläche der Wand, die geometrisch streng mit senkrechten und waagerechten Fugen gemauert ist, lagern sich die kompositionsbestimmenden Diagonalteile, wiederum in verschiedenen Ebenen ausgeführt und bestimmt durch eine komplexe zentrale Form, die sich nach den Seiten hin in ihrer Komplexität vereinfachend auflöst.</q><br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span><br><br><br>
+                        <a href="http://institut-aktuelle-kunst.de/kunstlexikon/saarbruecken-enzweiler-wandgestaltung-1782" target="_blank">http://institut-aktuelle-kunst.de/kunstlexikon/saarbruecken-enzweiler-wandgestaltung-1782</a>
+                    </p>
+                    <button id="btn--weiterlesen--werk--1">Weiterlesen</button>
+                </article>
+            </section>
+        </section>    
+    </section>
+    
+<!-- Section für Spiel 2 -->    
+    
+    <section id="spiel--2" class="wrapper--spiel  slide-out-down">
+        <section id="wrapper--spiel--inner--2" class="slide-0">
+            <section id="screen--einleitung--2" class="screen--spiel screen--einleitung">
+                <nav>
+                    <button class="btn--cancel--spiel--2 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Kann man ein Bild lesen?</h1>
+                    <q>Drei Elemente sind nach Einsicht der Wahrnehmungspsychologie in einem Vorgang erfassbar, währenddem man bei vier Elementen anfangen muß zu lesen. Ich habe das ganz bewußt eingesetzt und es ist ja auch schon in den Vorläufern zu meinen Collagen, den Aluminiumbildern drin. Einen Raster von minimal vier Elementen verwende ich also, damit der Betrachter sich nicht festsetzen kann auf einem Element, daß er gezwungen wird zu wandern.</q><br><br><span class="quote--by">(Jo Enzweiler)</span>
+                </article>
+                <footer>
+                    <button id="btn--weiter--einleitung--2">Zum Spiel</button>                
+                </footer>
+            </section>
+
+            <section id="screen--spielen--2" class="screen--spielen screen--spiel">
+                <nav>
+                    <button id="btn--back--1--spiel--2" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--2 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article class="overlay--anleitung">    
+                    <h2><br><br>Tauche den Stempel ins Stempelkissen und mache mehrere Abdrücke. <br><br>Wiederhole es. <br><br><br>&nbsp;</h2>
+                </article>
+                <div id="container--spiel--2" class="remove"></div>
+                <footer>
+                    <button id="btn--starten--spiel--2">Starten</button>
+                    <button id="btn--speichern--spiel--2" class="remove">Speichern</button>
+                    <button id="btn--fertig--spiel--2">Fertig</button>
+                </footer>  
+            </section>
+
+            <section id="screen--werk--2" class="screen--spiel screen--werk">
+                <nav>
+                    <button id="btn--back--2--spiel--2" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--2 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>o. T</h1>
+                    <figure>
+                        <img src="img/spiel--2--werk.jpg">
+                        <figcaption>
+                            1959, Stempeldruck, 49 x 49 cm
+                        </figcaption>
+
+
+                        <audio>
+                            <source src="audio/spiel--2--audio.mp4">
+                        </audio>
+                        <button id="play--2">
+                            <svg height="50" width="40">
+                                <polyline points="0, 10 20, 50 40, 10 0, 10">
+                                </polyline>                     
+                            </svg>
+                        </button>
+                        <button id="pause--2" class="remove">
+                            <svg height="40" width="20">
+                                <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
+                                </polyline>  
+                            </svg>
+                            <svg height="40" width="20">
+                                <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
+                                </polyline>                 
+                            </svg>
+                        </button>
+                    </figure>
+                    <p id="text--werk--2" class="truncate">
+                        Die Stempeldrucke sind ganz frühe Arbeiten Jo Enzweilers. Sie stammen sozusagen aus der Experimentierküche eines jungen Künstlers. Von Anfang an hat sich Jo Enzweiler für das Thema Wiederholung und Variation interessiert. Der Stempel ist dafür das ideale Werkzeug. Allerdings benutzt er keinen vorgefertigten Stempel, wie Du ihn etwa vom Postamt kennst. Er baut sich seinen eigenen so genannten Druckstock. Denn eigentlich ist jedes Ding grundsätzlich dazu geeignet, ein Stempel zu sein, man muss es nur in Farbe tauchen und auf eine Oberfläche drücken, so dass ein Abdruck entsteht. Später wird er dafür zum Beispiel auch mit aufgeschnittenen Kartoffeln arbeiten. Der Stempel, den Enzweiler für diese Blätter benutzt, istwar vermutlich aus Holz und von ihm selbst zugeschnitten und gefräst. Der Druckstock ist quadratisch mit einem ausgesparten Kreis. Interessant am Stempeldruck ist, dass er niemals exakt gleich ist, sondern immer abhängig vom ausgeübten Druck und der Menge der Farbe. Genau damit spielt der Künstler hier: Er taucht den Stempel nicht nach jedem Abdruck erneut in die Farbe, sondern druckt so lange, bis keine mehr Farbe mehr am Stempel ist, dann taucht er wieder ein, und so fort, bis die ganze Fläche vollgestempelt ist. Durch die abnehmende Farbdichte erzeugt Enzweiler Räumlichkeit im Bild. Er geht dabei sehr behutsam vor und hält sich an ein vom Stempel selbst erzeugtes Raster. Weil er nur Schwarz verwendet entsteht ein interessanter Eindruck von Licht und Schatten, von Helligkeiten, Nuancen, Höhen und Tiefen und, auch hier schon, von Rhythmus. Interessant ist, dass Du auf den Stempeldrucken die helle Kreisform als positiv wahrnimmst, obwohl sie als Vertiefung in den Druckstock geschnitten ist und sozusagen die „Leerstelle” zeigt. In der rhythmischen Abfolge der Formen gelingt es Jo Enzweiler, Deinen Blick und Deine Wahrnehmung zu lenken, sodass Du über die Betrachtung der einzelnen Formen hinaus eine Gesamtwirkung empfindest. Andererseits konstruierst Du durch deine Seherfahrung deine individuelle Bildwahrnehmung selbst. Das Motiv, ein in ein Quadrat eingestellter Kreis, wird Dir noch in einigen anderen Arbeiten begegnen, zum Beispiel beim Kirchenportal in Mechern oder beim Schachspiel. Aber auch viel später greift er es für den Entwurf einer Platzgestaltung in Malstatt (interner link?) wieder auf.<br>
+                    <br><q>Schon früher habe ich mit den Grundformen Quadrat und Kreis im grafischen Bereich gearbeitet, indem ich durch Reihung und durch unterschiedliche Farbgebung versucht habe, Flächengestaltungen herzustellen. Daraus hat sich weiterführend die Auseinandersetzung mit dem Relief ergeben, indem ich aus den Grundformen Kreis und Quadrat übergeleitet habe zu der Auseinandersetzung mit der plastischen Form von Zylindern, Würfeln und Kombinationsmöglichkeiten hieraus. Auf diese Weise entstanden Reliefs. Gleichzeitig, neben den grafischen und den Reliefversuchen, ist seinerzeit das Schachspiel entstanden, das im Nachhinein deutlich zeigt, dass ich auf diese Weise zur vollplastischen Form gefunden habe.</q><br><br><span class="quote--by">(Jo Enzweiler)</span>
+                    <br>
+                    <br><q>Das Raster spielt in meiner Arbeit eine große Rolle, weil es das Ordnungsprinzip für die serielle Anordnung überhaupt garantiert. Darüber hinaus entsteht durch die Wiederholung dieser plastischen Einzelformen, die nur gering dimensioniert sind, die Möglichkeit, in einem strengen Gestaltungszusammenhang die Reliefarbeit zu entwickeln. Man kann vielleicht sagen, dass das Raster in seiner Form als uraltes Ordnungsprinzip sozusagen auch das geistige Skelett für viele meiner künstlerisch ausgeführten Ideen ist.</q><br><br><span class="quote--by">(Jo Enzweiler)</span>
+                    <br><br><br>
+                    <a href="http://institut-aktuelle-kunst.de/kunstlexikon/enzweiler-schachspiel-1834" target="_blank">http://institut-aktuelle-kunst.de/kunstlexikon/enzweiler-schachspiel-1834</a>
+                    <br><br> 
+                    <a href="http://institut-aktuelle-kunst.de/kunstlexikon/merzig-mechern-enzweiler-portal-1956" target="_blank">http://institut-aktuelle-kunst.de/kunstlexikon/merzig-mechern-enzweiler-portal-1956</a>
+                    </p>
+                    <button id="btn--weiterlesen--werk--2">Weiterlesen</button>
+                </article>
+            </section>
+        </section>    
+    </section>
+    
+<!-- Section für Spiel 3 -->    
+    
+    <section id="spiel--3" class="wrapper--spiel  slide-out-down">
+        <section id="wrapper--spiel--inner--3" class="slide-0">
+            <section id="screen--einleitung--3" class="screen--spiel screen--einleitung">
+                <nav>
+                    <button class="btn--cancel--spiel--3 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Kann man mit Kunst auch spielen?</h1>
+                    <q>Das zweite, mal abgesehen von der Vermittlung, was mich immer bewegt hat, ist tatsächlich der Gedanke, daß Kunst auch in die Gesellschaft hineingetragen werden muß, daß wir als Künstler eine Bringschuld haben. Ja, eine Verantwortung. Wir müssen der Gesellschaft entgegen gehen, unsere Arbeit anbieten, und ihr die Möglichkeit verschaffen, die Arbeit zu rezipieren.</q><br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span>
+                </article>
+                <footer>
+                    <button id="btn--weiter--einleitung--3">Zum Spiel</button>                
+                </footer>
+            </section>
+
+            <section id="screen--spielen--3" class="screen--spiel screen--spielen">
+                <nav>
+                    <button id="btn--back--1--spiel--3" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--3 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article class="overlay--anleitung">    
+                    <h2><br><br>Suche dir eine große Freifläche und scanne diese. <br><br>Du kannst Elemente verändern, indem du sie anklickst.<br>&nbsp;</h2>
+                </article>
+                <div id="container--spiel--3" class="remove"></div>
+                <footer>
+                    <button id="btn--starten--spiel--3">Starten</button>
+                    <button id="btn--fertig--spiel--3">Fertig</button>
+                </footer>  
+            </section>
+
+            <section id="screen--werk--3" class="screen--spiel screen--werk">
+                <nav>
+                    <button id="btn--back--2--spiel--3" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--3 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Schachspiel</h1>
+                    <figure>
+                        <img src="img/spiel--3--werk.jpg">
+                        <figcaption>
+                            Entwurf 1959, Holz, Serienproduktion, Aluminium, massiv, schwarz oder weiß lackiert, im Holzkasten mit Aluminium, 10 x 22 x 16 cm, Auflage 50 Exemplare
+                        </figcaption>
+
+
+                        <audio>
+                            <source src="audio/spiel--3--audio.mp4">
+                        </audio>
+                        <button id="play--3">
+                            <svg height="50" width="40">
+                                <polyline points="0, 10 20, 50 40, 10 0, 10">
+                                </polyline>                     
+                            </svg>
+                        </button>
+                        <button id="pause--3" class="remove">
+                            <svg height="40" width="20">
+                                <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
+                                </polyline>  
+                            </svg>
+                            <svg height="40" width="20">
+                                <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
+                                </polyline>                 
+                            </svg>
+                        </button>
+                    </figure>
+                        <p id="text--werk--3" class="truncate"> Jo Enzweiler entwickelt 1959 aus Holz einen Prototypen für ein Schachspiel, das er später in einer Auflage von 50 Exemplaren in Aluminium fertigen lässt. Du musst  kein Schachspieler sein oder die Spielregeln kennen, um dieses Kunstwerk zu verstehen. Betrachte es einfach als mehrteiliges, bewegliches Objekt. Das Schachspiel steht nämlich im Zusammenhang mit anderen vielteiligen Werken, z.B.  einem Kirchenportal, das Enzweiler aus ähnlichen Einzelelementen entwickelt. <br><br>
+                        Das Spiel setzt sich aus 32 quaderförmigen Spielfiguren zusammen, 16 helle und 16 dunkle Steine. Alle Figuren basieren auf den Grundformen Rechteck, Quadrat und Kreis. Es ist erstaunlich wie unterschiedlich sie trotzdem sind. Die acht kleinen Quader mit der kreisrunden Mulde oben in der Mitte sind die acht Bauern. Die beiden Läufer haben die gleiche Form, die Steine sind nur insgesamt höher. Bei den beiden Türmen ist die runde Form oben aufgesetzt. Dann gibt es zwei Springer: Hier sind zylindrische Öffnungen von oben und von allen vier Seiten in den Spielstein vertieft, sodass Du im oberen Bereich aus jeder Richtung durch die Figur hindurchschauen kannst. Die Springer definieren damit offene Formen, sie umschließen Raum. Auch die Dame und der König bilden offene Formen aus: Die Dame ist an zwei Seiten mit einer zylindrischen Öffnung versehen, der König an vier Seiten. Nach oben hin ist das Königspaar aber geschlossen.
+                        <br><br>
+                        Jede der Figuren ist eine kleine Plastik für sich, Du kannst sie in die Hand nehmen, von allen Seiten betrachten, aufstellen oder hinlegen. Du kannst zwei, drei, vier oder alle dieser kleinen Objekte nebeneinander, übereinander oder wild durcheinander stellen oder legen. Vielleicht gruppierst Du die Objekte so dicht, dass sie als geschlossene Gesamtform im Raum stehen. Oder Du spielst das Motiv der Öffnung aus und beziehst den Umraum mit ein. Als Spielobjekt kommen die Figuren in einem eigens dafür angefertigten Kästchen, das wie ein Setzkasten funktioniert. So entstehen auch beim Ein- und Ausräumen immer neue Bilder. Es geht bei dieser Arbeit, wie auch beim Schach, um Kombinatorik, das heißt um ein Ausspielen von Möglichkeiten. Aus der Beschränkung auf einfache Formen entsteht – mit oder ohne Spielregeln – eine große Vielfalt, unzählige Bilder, unzählige räumliche Formationen... Hast Du ein Spiel schon mal als Bild betrachtet?
+                        <br><br>
+                        <q>Was die Entwicklung des Schachspiels betrifft, so muss ich vielleicht etwas ausholen: In der Ausbildung am damaligen Hochschulinstitut für Kunst und Werkerziehung an der Werkkunstschule in Saarbrücken wurde ein besonderer Wert auf die Vermittlung handwerklicher Fähigkeiten gelegt. Wir hatten die Gelegenheit, in verschiedenen Werkstätten unsere haptischen Fähigkeiten ausbilden zu lassen, und für mich war von besonderer Bedeutung die Arbeit in den Werkstätten des Buchbinders und des Schreiners. Wie Sie wissen, hat sich daraus für mich, gerade was den Umgang mit dem Buch betrifft, der Schwerpunkt meiner Collagen viel später entwickelt. Auf der anderen Seite habe ich im Nebenfach Kunstgeschichte mich persönlich intensiv mit der Geschichte des Bauhauses auseinandergesetzt – natürlich auch deswegen, weil das damalige Lehrkonzept des Institutes auf Gedanken des Bauhauses aufbaute. In diesem Zusammenhang habe ich zum ersten Mal Entwürfe für das Schachspiel kennen gelernt, die in unkonventioneller Weise neue Wege der Gestaltung für dieses »Spielobjekt« aufgezeigt haben. Ich habe für mich persönlich die Herausforderung angenommen, einen weiteren Versuch in dieser Richtung zu unternehmen und über einen längeren Zeitraum hinweg einen Prototyp zu entwickeln, den ich erst vor einigen Jahren in Serie produzieren lassen konnte.
+                        <br>
+                        Dabei sind für mich zwei Dinge wichtig gewesen: einmal ein Objekt zu schaffen, das funktional durchdacht ist und auch eine Funktion erfüllt, und zum anderen die Möglichkeit eröffnet, über die eigentliche Funktion hinaus, durch Eigeninitiative des Besitzers als Kunstobjekt gehandhabt zu werden. Zudem war es noch einmal der Versuch, durch ein ‘multipliziertes Kunstobjekt’ in die Gesellschaft hinein zu wirken.</q><br><br>
+                        <span class="quote--by">(Jo Enzweiler)
+                        </span><br><br><br>
+                        vgl. Portalgestaltung, St. Quiriakus, Merzig-Mechern: <a href="http://institut-aktuelle-kunst.de/kunstlexikon/merzig-mechern-enzweiler-portal-1956" target="_blank">http://institut-aktuelle-kunst.de/kunstlexikon/merzig-mechern-enzweiler-portal-1956</a><br>
+                        <br>
+                        vgl. Stempeldruck (interner Link?)
+                    </p>
+                    <button id="btn--weiterlesen--werk--3">Weiterlesen</button>
+                </article>
+            </section>
+        </section>    
+    </section>   
+    
+<!-- Section für Spiel 4 -->    
+    
+    <section id="spiel--4" class="wrapper--spiel  slide-out-down">
+        <section id="wrapper--spiel--inner--4" class="slide-0">
+            <section id="screen--einleitung--4" class="screen--spiel screen--einleitung">
+                <nav>
+                    <button class="btn--cancel--spiel--4 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Wo stehe ich hier? </h1>
+                    <q>Kunst im öffentlichen Raum ist das Resultat eines komplexen Prozesses, der zugleich im theoretischen, wie im praktischen Bereich eine Vielzahl von Entscheidungen fordert. Die sozio-kulturelle Leistung, welche durch Kunst in der Öffentlichkeit erbracht werden kann, wird, so die Überzeugung Jo Enzweilers, zur Festigung der Identität der Handelnden führen.</q><br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span>
+                </article>
+                <footer>
+                    <button id="btn--weiter--einleitung--4">Zum Spiel</button>                
+                </footer>
+            </section>
+
+            <section id="screen--spielen--4" class="screen--spiel screen--spielen">
+                <nav>
+                    <button id="btn--back--1--spiel--4" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--4 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article class="overlay--anleitung">    
+                    <h2><br><br>Suche dir eine große Freifläche und scanne diese. <br><br>Du kannst Elemente verändern, indem du sie anklickst.<br>&nbsp;</h2>
+                </article>
+                <div id="container--spiel--4" class="remove"></div>
+                <footer>
+                    <button id="btn--starten--spiel--4">Starten</button>
+                    <button id="btn--fertig--spiel--4">Fertig</button>
+                </footer>  
+            </section>
+
+            <section id="screen--werk--4" class="screen--spiel screen--werk">
+                <nav>
+                    <button id="btn--back--2--spiel--4" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--4 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Platzgestaltung Malstatter Markt</h1>
+                    <figure>
+                        <img src="img/spiel--4--werk.jpg">
+                        <figcaption>
+                            1983, Maßstab-Modell 1:10, Holz, 80 x 160 x 8 cm
+                        </figcaption>
+
+
+                        <audio>
+                            <source src="audio/spiel--4--audio.mp4">
+                        </audio>
+                        <button id="play--4">
+                            <svg height="50" width="40">
+                                <polyline points="0, 10 20, 50 40, 10 0, 10">
+                                </polyline>                     
+                            </svg>
+                        </button>
+                        <button id="pause--4" class="remove">
+                            <svg height="40" width="20">
+                                <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
+                                </polyline>  
+                            </svg>
+                            <svg height="40" width="20">
+                                <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
+                                </polyline>                 
+                            </svg>
+                        </button>
+                    </figure>
+                    <p id="text--werk--4" class="truncate"> Für den architektonisch neu gestalteten Marktplatz des Saarbrücker Stadtteils Malstatt sieht das Bauamt 1983 einen Wettbewerb zur künstlerischen Gestaltung des Raumgefüges vor. Jo Enzweiler fertigt als Wettbewerbsentwurf eine Brunnengestaltung an. Er beabsichtigt, die ca. 16,00 x 8,00 m messende Gesamtfläche durch ein quadratisches Raster von 6 x 11 Einzelelementen zu rhythmisieren. Die Flächen sollten reliefartig in Form von mehreren Quadrat- und Kreiselementen emportreten, die in einer Stärke von jeweils 10 cm aufgebracht werden sollten. Enzweilers Entwurf thematisiert die geometrischen Formen des Quadrates und des Kreises bzw. des Kreissegmentes. Insgesamt besticht die Komposition durch die geringe Tiefe in der Horizontalität. Interessant für eine Brunnengestaltung ist die Reliefierung, die besonders innerhalb der Binnenelemente hervortreten sollte und die den Brunnen sowohl in der Verwendung mit, aber auch ohne Wasser als vollwertige Reliefplastik auszeichnet. Eine besondere gestaltende Funktion hätte auch dem Wasser zukommen sollen. Enzweiler beschreibt zwei mögliche Varianten der Wasserführung, wodurch gerade die Binnengestaltung des Brunnens in der Lichtbrechung an der aufsteigenden bzw. abgesenkten Wasseroberfläche veränderte Ansichten bewirkt hätte. Stilistisch nimmt die Platzgestaltung Jo Enzweilers auf zahlreiche frühere Reliefarbeiten sowie vollplastische Objekte Bezug und reicht in die frühen 1960er Jahre zurück. Obwohl der Entwurf für die Platzgestaltung von der Jury gelobt wird, ist das Projekt nie realisiert worden.<br><br>
+                    <q>Nach langen Überlegungen scheint mir an der vorgesehenen Stelle die Lösung am sinnvollsten, die nicht mit der späteren aufstrebenden Architektur in Konflikt gerät, sondern ganz allgemein deren plastische Prinzipien aufgreift und eigenständig umsetzt. Daraus resultiert als grundsätzliche Überlegung ein Objekt, dessen Ausdehnung wesentlich horizontal bestimmt ist. Wichtig dabei ist der Verzicht auf doktrinäre Monumentalität (Denkmal) und der Versuch, im Rahmen eines Kommunikationszentrums, wie es ein Markt von altersher ist, einen deutlichen Orientierungspunkt zu geben. In diesem Fall soll dabei der Bezug zu Menschen gesucht werden, d.h. seinen angeborenen visuellen, haptischen und raumgreifenden Erfahrungen entsprechend. Das Objekt soll rational und emotional erfaßbar sein, d.h. man kann es betasten, begehen und umschreiten. Demzufolge ist die angestrebte Lösung eine Kombination aus einer liegenden Skulptur und einer Brunnenanlage. Einerseits soll das Objekt auch ohne Wasserführung (Winterzeit) voll wirksam sein, andererseits wird seine Wirkung durch verschiedene Lösungen der Wasserführung ergänzt und verlebendigt.
+                    <br><br>
+                    Entsprechend den vorgegebenen Voraussetzungen weist die gesamte Anlage eine nur geringe Tiefe aus. Sie besteht aus 6 x 11 Elementflächen von der Größe 125 x 125 cm, auf denen jeweils in verschiedener Form Elemente von der gleichen Größe in 10 cm Materialstärke aufgeführt werden. Als Material wird weißer Marmor vorgeschlagen. Der weiße Marmor garantiert große Haltbarkeit und steigert die angestrebte plastische Wirkung und setzt sich darüber hinaus gegen die Farbigkeit der Umgebung wohltuend ab. Die genaue Anordnung ist detailliert aus dem Modell im Maßstab 1:10 ersichtlich. Die Einzelelemente werden aufeinandergeschichtet und untereinander verdübelt.
+                    <br><br>
+                    Die Wasserführung soll unter der gesamten Anlage verlaufen. Das Wasser tritt in den Kreuzpunkten der ersichtlichen Fugen aus. Von der Installation soll möglichst wenig sichtbar sein. Für die Wasserbewegung schlage ich zwei Lösungen vor.
+                    <br><br>
+                    Lösung 1:
+                    <br><br>
+                    Das Wasser steigt stündlich in dem vorhandenen Becken um 10 cm (Schichtstärke der Marmorplatten), bis es den Rand des Beckens erreicht hat. Im gleichen Rhythmus wird das Wasser dann wieder abgesaugt. Hierdurch entsteht eine jeweils durch das Wasser veränderte plastische Situation, indem Teile der Innenplastik entweder von Wasser bedeckt oder freistehend wirken. Diese Lösung bezeichne ich als die ‘stille Lösung’, die in deutlichem Gegensatz zu der Bewegtheit des Lebens auf dem Platze stehen soll.
+                    <br><br>
+                    Lösung 2:
+                    <br><br>
+                    In den Schnittpunkten werden die Wasseraustritte mit Sprudlern bestückt, die dafür sorgen, daß eine ständig leicht bewegte Wasseroberfläche entsteht; im gleichen Maße aber soll die Wasserfläche in einem bestimmten Rhythmus auf- und abgesenkt werden.
+                    <br><br>
+                    Das Objekt soll durch die Wasserrinnen in die Gesamtanlage des Platzes integriert werden, indem die Rinnen aus breiten Marmorplatten der gleichen Farbe angelegt werden und so gleichsam als Farbwege auf das Objekt zugeführt werden. Das Wasser wird vor dem Objekt selbst auf der gesamten Breite in einer Rinne aufgefangen.
+                    <br><br>
+                    Die Gesamtfarbigkeit des Platzes kann hier nur andeutungsweise diskutiert werden. Entsprechend dem Weiß des Marmors plädiere ich für eine graue Belagsfläche des Gesamtplatzes. An den Fassaden sollte neben dem Rot der schon festgelegten Fensterelemente die Farbigkeit von weiß nach schwarz variiert werden, so daß später im Kontrast zu den noch erscheinenden Werbeflächen eine verhaltene Farbigkeit garantiert ist.</q><br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span>
+                    </p>
+                    <button id="btn--weiterlesen--werk--4">Weiterlesen</button>
+                    
+                </article>
+            </section>
+        </section>    
+    </section>
+    
+    <!-- Section für Spiel 5 -->    
+    
+    <section id="spiel--5" class="wrapper--spiel  slide-out-down">
+        <section id="wrapper--spiel--inner--5" class="slide-0">
+            <section id="screen--einleitung--5" class="screen--spiel screen--einleitung">
+                <nav>
+                    <button class="btn--cancel--spiel--5 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Hat ein Bild einen Klang? </h1>
+                    <q>Im Sinne des Wortes con-struere füge ich vorgefundene (z. T. schon selbst konstruierte) Teile aus der uns umgebenden materiellen Welt zu einem neuen Ganzen zusammen. Konstruieren hier nicht nur in der landläufigen Bedeutung des Wortes für die Bezeichnung einer intellektuellen Handlung, sondern besonders als Definition künstlerischen Handelns, das im Kontext der Bildenden Kunst immer aus dem „Machen“ erwächst.</q><br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span>
+                </article>
+                <footer>
+                    <button id="btn--weiter--einleitung--5">Zum Spiel</button>                
+                </footer>
+            </section>
+
+            <section id="screen--spielen--5" class="screen--spiel screen--spielen">
+                <nav>
+                    <button id="btn--back--1--spiel--5" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--5 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <div id="container--spiel--5" class="remove"></div>
+                <article class="overlay--anleitung">    
+                    <h2><br><br>Reiße die Blätter seitlich in zwei Hälften und ordne den unteren Teil in einer Komposition an.<br>&nbsp;</h2>
+                </article>
+                <footer>
+                    <button id="btn--starten--spiel--5">Starten</button>
+                    <button id="btn--speichern--spiel--5" class="remove">Speichern</button>
+                    <button id="btn--fertig--spiel--5">Fertig</button>
+                </footer>  
+            </section>
+
+            <section id="screen--werk--5" class="screen--spiel screen--werk">
+                <nav>
+                    <button id="btn--back--2--spiel--5" class="btn--back">
+                        <svg height="20" width="20">
+                            <polyline points="20, 20 0, 10 20, 0"></polyline>
+                        </svg>
+                    </button>
+                    <button class="btn--cancel--spiel--5 btn--cancel">
+                        <svg height="20" width="20">
+                            <polyline points="0, 20 20, 0"></polyline>
+                            <polyline points="20, 20 0, 0"></polyline>
+                        </svg>
+                    </button>
+                </nav>
+                <article>
+                    <h1>Marburgprojekt
+                    </h1>
+                    <figure>
+                        <img src="img/spiel--5--werk.jpg">
+                        <figcaption>
+                            189 Karton-Collagen, 2003/2004, Holz, Karton, gerissen, je 30 x 30 x 1 cm
+                        </figcaption>
+
+
+                        <audio>
+                            <source src="audio/spiel--5--audio.mp4">
+                        </audio>
+                        <button id="play--5">
+                            <svg height="50" width="40">
+                                <polyline points="0, 10 20, 50 40, 10 0, 10">
+                                </polyline>                     
+                            </svg>
+                        </button>
+                        <button id="pause--5" class="remove">
+                            <svg height="40" width="20">
+                                <polyline points="0, 0 12, 0 12, 40 0, 40 0,0">
+                                </polyline>  
+                            </svg>
+                            <svg height="40" width="20">
+                                <polyline points="8, 0 20, 0 20, 40 8, 40 8,0">
+                                </polyline>                 
+                            </svg>
+                        </button>
+                    </figure>
+                        <p id="text--werk--5" class="truncate">  Von Herbst 2003 bis Frühsommer 2004 verwirklicht Jo Enzweiler das Marburgprojekt an temporär wechselnden Orten: in den Ausstellungsräumen des Marburger Kunstvereins und in der Ludwigskirche Saarbrücken. 2005 resultiert aus der Aktion ein Folgeprojekt für das Museum für Konkrete Kunst Ingolstadt. Als Ankauf für den Landtag des Saarlandes hat es mittlerweile im Foyer des Landtagsgebäudes dauerhafte Präsenz im öffentlichen Raum gefunden.<br>
+                        <br>
+                        Betrachtest Du das Marburgprojekt, nimmst Du wahrscheinlich zunächst ein sehr großes gelb-graues Bild wahr. Schaust Du genauer, wirst Du erkennen, dass sich Dein Eindruck aus vielen einzelnen Bildern zusammensetzt. Diese Einzelelemente haben eine überschaubare Größe - in etwa so hoch wie ein DIN A4 Blatt, nur eben quadratisch. Viele dieser quadratischen Bilder sind völlig gelb, andere zeigen eine graue Struktur aus Karton. Jo Enzweiler nennt diese Bilder Karton-Collagen. Sie nehmen eine sehr wichtige Stellung in seinem gesamten künstlerischen Schaffen ein.<br>
+                        <br>Wie konstruiert Jo Enzweiler seine Karton-Collagen?<br>
+                        <figure style="margin-bottom:0rem">
+                            <video controls>
+                            <source src="video/werk--5--video.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>Dies ist ein Platzhaltertext für das Video, in dem Enzweiler seine Karton-Collagen reisst.</figcaption>
+                        </figure>    
+                        Enzweiler nimmt ein quadratisches Stück farbigen Kartons in die Hand und reißt es in zwei Hälften. Es entstehen feine Strukturen, die Du mit den Fingern ertasten kannst und Du siehst die Materialfarbe des Kartons, ein vielschichtiges Grau. Die beiden Teile können nun beliebig angeordnet werden, sie sind zwei Teile eines Ganzen. Enzweiler wählt in seinen Karton-Collagen meistens die horizontale Ausrichtung. Vielleicht denkst Du beim Betrachten der Risskanten an ein Gebirge oder an die Horizontlinie, wenn Du aufs Meer hinaus schaust. Im Marburgprojekt reiht der Künstler viele dieser Bilder neben und übereinander an. Zum Teil wandern die Rissspuren von einem Bild zum nächsten. Wahrscheinlich wird sich Dein Bildeindruck verändern, wenn Du das Marburgprojekt in verschiedenen räumlichen Situationen siehst, z.B. in einer Kirche, in einem Museum oder vielleicht an der Schallschutzwand neben einer Autobahn. Dir fallen bestimmt viele interessante Orte ein, die Deinen Blick auf die Rissspuren unterschiedlich beeinflussen. Probier’ es einfach aus!<br>
+                        <br>Als das Marburgprojekt in der Ludwigskirche in Saarbrücken aufgestellt war, hat der Musikprofessor, Organist und Komponist Theo Brandmüller (1948-2012) in einem Konzert eine Orgelimprovisation dazu entwickelt.<br><br>Bei dem Musiker hat die Betrachtung der Karton-Collagen Eindrücke hinterlassen und Empfindungen ausgelöst, die er in Orgelklänge umsetzt. Bildliche Anschauung kann also nicht nur bildliche Eindrücke erzielen, sondern auch alle anderen Sinne ansprechen. Die Musik entsteht unter dem bildlichen Eindruck der Karton-Collagen. Vergleichst Du die Orgelimprovisation mit dem Marburgprojekt, erkennst Du Berührungspunkte. Die Bilder sind durch zwei wesentliche Aspekte bestimmt: 1. die quadratische Ausgangsform und die rasterförmige Anordnung der einzelnen Bilder und 2. die freien Formen des gerissenen Kartons. Übertragen auf die Musik lässt sich das quadratische Raster mit dem Taktschlag vergleichen. Die freien Formen finden sich in der Melodie wieder. Schnelle Tonabfolgen scheinen die Risse wiederzugeben, verschiedene Klänge schieben sich zu Klangbändern übereinander. Eine ähnliche Vielschichtigkeit lassen die Kartoncollagen erkennen. Manchmal leuchtet in der Musik ein heller, langgezogener Ton hervor. Er scheint die Lichtfarbe Gelb zu vertonen. Im Zusammenhang mit der Musik zeigt sich, dass ein Bild nicht nur bildliche Vorstellungen wecken kann, sondern auch Empfindungen hervorrufen kann, die sich beispielsweise in Musik äußern.<br><br>
+                        <q>Mit dem Marburgprojekt greife ich eine von mir seit Langem geübte Praxis auf, indem ich in zeitlich größeren Abständen eine in Umfang und Bedeutung komplexe Arbeit in Angriff nehme, die exemplarisch den Stand meiner künstlerischen Bemühungen reflektiert. Ein mittleres Gelb, das fast nicht wahrnehmbar leicht durch Rot-Anteile variiert wird, bildet diesen einheitlichen Grundton aller Tafeln. Auf etwas mehr als der Hälfte der Tafeln sind sodann gerissene Kartonteile aufgebracht, bei denen die Tiefenschichten des Kartons freigelegt sind. Die so weiter behandelten Tafeln fügen sich jeweils zu Gruppen von zwei oder drei Teilen zusammen oder erscheinen einzeln. Im Vordergrund steht das Bemühen, durch eine konzentrierte Betonung der Farbe einen imaginären Raum zu schaffen, in dem die Reißformen durch die scheinbar einfachen Grauvariationen, aktive Farb- und Raumtiefe erzeugen. Durch die farblichen, formalen und materialen Ansätze setzte ich mich hier mit dem Übergang von Raum ins Unendliche auseinander. Die seit Jahren meine Arbeit bestimmende formale Auseinandersetzung mit der waagerechten Begrenzungslinie im Prozess des Reißens hat die inhaltliche Thematisierung des Horizonts zur Folge, die im Marburgprojekt deutlich zum Ausdruck kommt.</q>
+                    <br><br>
+                    <span class="quote--by">(Jo Enzweiler)</span><br><br><br>
+                    <a href="http://archiv.ub.uni-heidelberg.de/artdok/5280/1/Dittmann_Jo_Enzweilers_Marburgprojekt_2004.pdf" target="_blank">http://archiv.ub.uni-heidelberg.de/artdok/5280/1/Dittmann_Jo_Enzweilers_Marburgprojekt_2004.pdf</a></p>
+                    <button id="btn--weiterlesen--werk--5">Weiterlesen</button>
+                    
+                </article>
+            </section>
+        </section>    
+    </section>   
+    
+<!-- Hero-Screen für den Fall, dass alle Spiele fertig gespielt wurden -->
+    
+    <section id="screen--hero">
+        <nav>
+            <button id="btn--cancel--hero" class="btn--cancel hide"></button>
+        </nav>
+        <article>
+            <h1>Glückwunsch!</h1>
+            <ul>
+                <li>Du hast alle Spiele ausprobiert und die Werke von Jo Enzweiler entdeckt.</li>
+                <li>Teile deine gespeicherten Ergebnisse auf <a href="https://twitter.com/" target="_blank">Twitter</a> und <a href="https://www.instagram.com/" target="_blank">Instagram</a> unter dem Hashtag #horizonte-app.</li>
+                <li>Für weiterführende Informationen besuche die Webseite des <a href="http://institut-aktuelle-kunst.de/" target="_blank">Instituts für Aktuelle Kunst, Saarbrücken.</a></li>
+            </ul><br><br>
+            <button id="btn--weiterspielen--hero">Weiterspielen</button>
+        </article>
+    </section>    
+    
+</section>    
+</body>
+</html>
