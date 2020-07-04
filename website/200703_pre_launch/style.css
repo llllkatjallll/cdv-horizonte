@@ -20,13 +20,6 @@
 }
 
 @font-face {
-    font-family: UniversRegular;
-    src: url("fonts/Univers45Light.ttf");
-    font-weight: thin;
-    font-style: normal;
-}
-
-@font-face {
     font-family: UniversExtended;
     src: url("fonts/Univers53Extended.ttf");
     font-weight: normal;
@@ -97,7 +90,6 @@ body {
         width: calc(100% - 2.4rem);
         --vish: calc((var(--vh, 1vh) * 100) - 18rem);
         height: var(--vish);
-        padding: 0rem 1.2rem 0rem 1.2rem;
         /*    background-color: azure; */
     }
 
@@ -230,7 +222,6 @@ body {
         width: calc(100% - 2.4rem);
         --vish: calc((var(--vh, 1vh) * 100) - 21.6rem);
         height: var(--vish);
-        padding: 0rem 1.2rem 0rem 1.2rem;
         /*    background-color: azure; */
     }
 
@@ -667,6 +658,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         position: fixed;
+        z-index: 
     }
 
     #screen--kunst > nav,
@@ -677,7 +669,7 @@ body {
 
     .wrapper--auswahl > nav,
     .wrapper--auswahl > footer {
-        z-index: 15;
+        z-index: 25;
         position: absolute;
     }
 
@@ -795,7 +787,7 @@ body {
         width: auto;
         padding: 4.8rem 1.2rem 2.4rem 1.2rem;
     }
-
+    
     #article--konkret, 
     #article--impressum{
         padding: 0rem 1.2rem 2.4rem 1.2rem !important;
@@ -1086,8 +1078,8 @@ body {
         margin: 0rem !important;
     }
     
-    screen--auswahl > article {
-        margin: 0rem !important;
+    .screen--auswahl > article{
+        padding-bottom: 1.2rem !important;
     }
     
 }
@@ -1205,7 +1197,6 @@ body {
         width: calc(100% - 2.4rem);
         --vish: calc((var(--vh, 1vh) * 100) - 33.4rem);
         height: var(--vish);
-        padding: 0rem 1.2rem 0rem 1.2rem;
         /*    background-color: azure; */
     }
 
