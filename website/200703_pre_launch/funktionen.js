@@ -403,7 +403,7 @@ $(document).ready(function (){
 /* Navigation Audio-Player 1 */    
 
             var audioElement1 = document.createElement('audio');
-    audioElement1.setAttribute('src', 'audio/spiel--1--audio.mpeg');
+    audioElement1.setAttribute('src', 'audio/spiel--1--audio.mp4');
     
     $('#play--1').click(function() {
         audioElement1.play();
@@ -421,7 +421,7 @@ $(document).ready(function (){
 /* Navigation Audio-Player 2 */    
     
             var audioElement2 = document.createElement('audio');
-    audioElement2.setAttribute('src', 'audio/spiel--2--audio.mpeg');
+    audioElement2.setAttribute('src', 'audio/spiel--2--audio.mp4');
     
     $('#play--2').click(function() {
         audioElement2.play();
@@ -439,7 +439,7 @@ $(document).ready(function (){
 /* Navigation Audio-Player 3 */        
     
             var audioElement3 = document.createElement('audio');
-    audioElement3.setAttribute('src', 'audio/spiel--3--audio.mpeg');
+    audioElement3.setAttribute('src', 'audio/spiel--3--audio.mp4');
     
     $('#play--3').click(function() {
         audioElement3.play();
@@ -457,7 +457,7 @@ $(document).ready(function (){
 /* Navigation Audio-Player 4 */        
     
             var audioElement4 = document.createElement('audio');
-    audioElement4.setAttribute('src', 'audio/spiel--4--audio.mpeg');
+    audioElement4.setAttribute('src', 'audio/spiel--4--audio.mp4');
     
     $('#play--4').click(function() {
         audioElement4.play();
@@ -475,7 +475,7 @@ $(document).ready(function (){
 /* Navigation Audio-Player 5 */        
     
         var audioElement5 = document.createElement('audio');
-    audioElement5.setAttribute('src', 'audio/spiel--5--audio.mpeg');
+    audioElement5.setAttribute('src', 'audio/spiel--5--audio.mp4');
     
     $('#play--5').click(function() {
         audioElement5.play();
